@@ -1,0 +1,6 @@
+(define add (lambda (a b) (+ a b)))
+(add 1 2)
+(define (square x) (* x x))
+(square 12)
+(define (const) 'k)
+(const)

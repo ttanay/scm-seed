@@ -1,0 +1,15 @@
+{
+  "title": "Named procedures and recursion",
+  "mode": "print",
+  "tests": {
+    "named": {
+      "description": "naming procedures"
+    },
+    "recursion": {
+      "description": "recursive procedures"
+    },
+    "forward-reference": {
+      "description": "referring to a procedure defined later"
+    }
+  }
+}

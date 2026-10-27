@@ -1,0 +1,12 @@
+{
+  "title": "apply",
+  "mode": "print",
+  "tests": {
+    "apply": {
+      "description": "applying procedures to lists"
+    },
+    "computed-arguments": {
+      "description": "an argument list built at run time"
+    }
+  }
+}

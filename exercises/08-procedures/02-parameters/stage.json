@@ -1,0 +1,15 @@
+{
+  "title": "Parameters",
+  "mode": "print",
+  "tests": {
+    "parameters": {
+      "description": "procedures with parameters"
+    },
+    "shadowing": {
+      "description": "parameters shadow outer bindings"
+    },
+    "lexical-scope": {
+      "description": "free variables are found where the procedure was made"
+    }
+  }
+}

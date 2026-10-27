@@ -1,0 +1,6 @@
+(define (first-of l) (car l))
+(define old car)
+(define car (lambda (p) 'redefined))
+(first-of '(a))
+(set! car old)
+(first-of '(a))

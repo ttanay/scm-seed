@@ -1,0 +1,46 @@
+{
+  "title": "Runtime errors: procedures",
+  "mode": "print",
+  "tests": {
+    "too-few": {
+      "description": "too few arguments",
+      "expect": "error"
+    },
+    "too-many": {
+      "description": "too many arguments",
+      "expect": "error"
+    },
+    "too-few-rest": {
+      "description": "too few arguments with a rest parameter",
+      "expect": "error"
+    },
+    "named-arity": {
+      "description": "arity is checked for named procedures",
+      "expect": "error"
+    },
+    "no-body": {
+      "description": "(lambda (x))",
+      "expect": "error"
+    },
+    "bad-formals": {
+      "description": "(lambda (1) 1)",
+      "expect": "error"
+    },
+    "bad-define-name": {
+      "description": "(define (1 x) x)",
+      "expect": "error"
+    },
+    "apply-improper": {
+      "description": "(apply + (cons 1 2))",
+      "expect": "error"
+    },
+    "apply-non-procedure": {
+      "description": "(apply 5 '())",
+      "expect": "error"
+    },
+    "apply-arity": {
+      "description": "(apply +)",
+      "expect": "error"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Procedure bodies",
+  "mode": "print",
+  "tests": {
+    "value": {
+      "description": "the last form gives the result"
+    },
+    "order": {
+      "description": "body forms run in order",
+      "mode": "run"
+    },
+    "counter": {
+      "description": "state with set!"
+    }
+  }
+}

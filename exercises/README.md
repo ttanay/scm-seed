@@ -82,10 +82,28 @@ Tick each stage (`[ ]` → `[x]`) as its tests pass. To see your real status, ru
 - [ ] 7.6 Remembering input
 - [ ] 7.7 Runtime errors: variables
 
+**[Section 8: Procedures](08-procedures/README.md)** (`--print`)
+
+- [ ] 8.1 lambda without parameters
+- [ ] 8.2 Parameters
+- [ ] 8.3 Named procedures and recursion
+- [ ] 8.4 Closures
+- [ ] 8.5 Higher-order procedures
+- [ ] 8.6 Rest parameters
+- [ ] 8.7 apply
+- [ ] 8.8 Filters over standard input
+- [ ] 8.9 Runtime errors: procedures
+
+**[Section 9: Sequencing](09-sequencing/README.md)** (`--print`)
+
+- [ ] 9.1 begin
+- [ ] 9.2 Procedure bodies
+- [ ] 9.3 Internal definitions
+- [ ] 9.4 begin and definitions
+- [ ] 9.5 Interactive programs
+
 **Coming next**
 
-- Section 8: Procedures
-- Section 9: Sequencing
 - Section 10: Strings and symbols
 - Section 11: Mutation and vectors
 - Section 12: Tail calls
@@ -94,7 +112,7 @@ Tick each stage (`[ ]` → `[x]`) as its tests pass. To see your real status, ru
 - Section 15: Continuations
 - Section 16: Capstone
 
-There are currently 51 stages with 207 tests.
+There are currently 65 stages with 255 tests.
 
 ## Harness modes
 
@@ -177,16 +195,16 @@ Which stages test each section of the spec, and the section of this course that 
 | §3.3 Integers | 3.2 | 3 |
 | §3.4 Characters and strings | — | 10 (coming) |
 | §4.1 Programs | 2.1, 5.2, 7.2 | 7 |
-| §4.2 Environments and variables | 2.3, 7.1, 7.4 | 8 (coming) |
+| §4.2 Environments and variables | 2.3, 7.1, 7.4, 8.2, 8.4, 9.3 | 8 |
 | §4.5 Process interface | 1.1, 5.1, 5.2, 5.3 | 13 (coming) |
 | §5.1 Variable reference | 2.3, 7.5, 7.7 | 7 |
 | §5.2 Procedure call | 3.1, 3.3, 3.8 | 3 |
 | §5.3 quote | 2.2, 2.4 | 2 |
 | §5.4 if | 6.1, 6.3, 6.4, 6.5, 6.6 | 6 |
-| §5.5 lambda | — | 9 (coming) |
-| §5.6 define | 7.1, 7.2, 7.6, 7.7 | 9 (coming) |
+| §5.5 lambda | 8.1, 8.2, 8.3, 8.4, 8.5, 8.6, 8.8, 8.9, 9.2 | 9 |
+| §5.6 define | 7.1, 7.2, 7.6, 7.7, 8.3, 8.6, 9.2, 9.3, 9.4 | 9 |
 | §5.7 set! | 7.3, 7.4, 7.7 | 7 |
-| §5.8 begin | — | 9 (coming) |
+| §5.8 begin | 9.1, 9.4, 9.5 | 9 |
 | §6 Macros | — | 14 (coming) |
 | §7 Proper tail recursion | — | 12 (coming) |
 | §8 Continuations | — | 15 (coming) |
@@ -197,9 +215,9 @@ Which stages test each section of the spec, and the section of this course that 
 | §9.5 Characters | 3.6, 3.7, 3.8 | 3 |
 | §9.6 Strings and symbols | — | 14 (coming) |
 | §9.7 Vectors | — | 11 (coming) |
-| §9.8 Control | — | 15 (coming) |
-| §9.9 Input and output | 5.1, 5.3, 5.4, 5.5, 6.5, 7.6 | 5 |
-| §10 Errors | 1.16, 1.17, 2.3, 2.4, 3.7, 3.8, 4.4, 5.5, 6.6, 7.7 | 13 (coming) |
+| §9.8 Control | 8.7, 8.9 | 15 (coming) |
+| §9.9 Input and output | 5.1, 5.3, 5.4, 5.5, 6.5, 7.6, 8.8, 9.5 | 5 |
+| §10 Errors | 1.16, 1.17, 2.3, 2.4, 3.7, 3.8, 4.4, 5.5, 6.6, 7.7, 8.9 | 13 (coming) |
 | §11 Conformance | — | 16 (coming) |
 
 Not tested, because no program can observe them:

@@ -1,0 +1,8 @@
+(define (make-counter)
+  ((lambda (n) (lambda () (set! n (+ n 1)) n)) 0))
+(define c1 (make-counter))
+(define c2 (make-counter))
+(c1)
+(c1)
+(c2)
+(c1)

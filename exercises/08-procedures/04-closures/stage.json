@@ -1,0 +1,15 @@
+{
+  "title": "Closures",
+  "mode": "print",
+  "tests": {
+    "make-adder": {
+      "description": "procedures that make procedures"
+    },
+    "counter": {
+      "description": "closures with state"
+    },
+    "sees-redefinition": {
+      "description": "globals are looked up when used"
+    }
+  }
+}

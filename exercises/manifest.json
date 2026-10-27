@@ -634,6 +634,143 @@
           ]
         }
       ]
+    },
+    {
+      "section": 8,
+      "dir": "08-procedures",
+      "title": "Procedures",
+      "stages": [
+        {
+          "id": "8.1",
+          "dir": "01-lambda",
+          "title": "lambda without parameters",
+          "spec": [
+            "§5.5"
+          ]
+        },
+        {
+          "id": "8.2",
+          "dir": "02-parameters",
+          "title": "Parameters",
+          "spec": [
+            "§5.5",
+            "§4.2"
+          ]
+        },
+        {
+          "id": "8.3",
+          "dir": "03-named-procedures",
+          "title": "Named procedures and recursion",
+          "spec": [
+            "§5.6",
+            "§5.5"
+          ]
+        },
+        {
+          "id": "8.4",
+          "dir": "04-closures",
+          "title": "Closures",
+          "spec": [
+            "§5.5",
+            "§4.2"
+          ]
+        },
+        {
+          "id": "8.5",
+          "dir": "05-higher-order",
+          "title": "Higher-order procedures",
+          "spec": [
+            "§5.5"
+          ]
+        },
+        {
+          "id": "8.6",
+          "dir": "06-rest-parameters",
+          "title": "Rest parameters",
+          "spec": [
+            "§5.5",
+            "§5.6"
+          ]
+        },
+        {
+          "id": "8.7",
+          "dir": "07-apply",
+          "title": "apply",
+          "spec": [
+            "§9.8"
+          ]
+        },
+        {
+          "id": "8.8",
+          "dir": "08-filters",
+          "title": "Filters over standard input",
+          "spec": [
+            "§5.5",
+            "§9.9"
+          ]
+        },
+        {
+          "id": "8.9",
+          "dir": "09-procedure-errors",
+          "title": "Runtime errors: procedures",
+          "spec": [
+            "§5.5",
+            "§9.8",
+            "§10"
+          ]
+        }
+      ]
+    },
+    {
+      "section": 9,
+      "dir": "09-sequencing",
+      "title": "Sequencing",
+      "stages": [
+        {
+          "id": "9.1",
+          "dir": "01-begin",
+          "title": "begin",
+          "spec": [
+            "§5.8"
+          ]
+        },
+        {
+          "id": "9.2",
+          "dir": "02-bodies",
+          "title": "Procedure bodies",
+          "spec": [
+            "§5.5",
+            "§5.6"
+          ]
+        },
+        {
+          "id": "9.3",
+          "dir": "03-internal-define",
+          "title": "Internal definitions",
+          "spec": [
+            "§5.6",
+            "§4.2"
+          ]
+        },
+        {
+          "id": "9.4",
+          "dir": "04-begin-and-definitions",
+          "title": "begin and definitions",
+          "spec": [
+            "§5.8",
+            "§5.6"
+          ]
+        },
+        {
+          "id": "9.5",
+          "dir": "05-interactive",
+          "title": "Interactive programs",
+          "spec": [
+            "§5.8",
+            "§9.9"
+          ]
+        }
+      ]
     }
   ]
 }

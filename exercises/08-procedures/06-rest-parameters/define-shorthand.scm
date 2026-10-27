@@ -1,0 +1,6 @@
+(define (f . xs) xs)
+(f 'a 'b)
+(f)
+(define (g a b . c) (cons a c))
+(g 1 2)
+(g 1 2 3 4)

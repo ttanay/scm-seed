@@ -1,0 +1,5 @@
+(define (f)
+  (define a 'inner)
+  (define (g) a)
+  (g))
+(f)

@@ -1,0 +1,21 @@
+{
+  "title": "Internal definitions",
+  "mode": "print",
+  "tests": {
+    "local": {
+      "description": "a local definition"
+    },
+    "mutual-recursion": {
+      "description": "local procedures that call each other"
+    },
+    "shadows-global": {
+      "description": "local definitions don't affect globals"
+    },
+    "per-call": {
+      "description": "each call gets its own definitions"
+    },
+    "counter": {
+      "description": "a counter with a local variable"
+    }
+  }
+}

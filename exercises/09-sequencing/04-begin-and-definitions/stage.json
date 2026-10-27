@@ -1,0 +1,16 @@
+{
+  "title": "begin and definitions",
+  "mode": "print",
+  "tests": {
+    "top-level": {
+      "description": "definitions in a top-level begin"
+    },
+    "in-body": {
+      "description": "definitions in a begin inside a body"
+    },
+    "not-global": {
+      "description": "definitions in a body's begin don't leak out",
+      "expect": "error"
+    }
+  }
+}

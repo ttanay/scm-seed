@@ -1,0 +1,12 @@
+{
+  "title": "Interactive programs",
+  "mode": "run",
+  "tests": {
+    "prompt": {
+      "description": "prompts between lines of input"
+    },
+    "sum-numbers": {
+      "description": "adding up the numbers in the input"
+    }
+  }
+}

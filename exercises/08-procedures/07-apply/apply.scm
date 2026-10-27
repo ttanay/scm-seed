@@ -1,0 +1,5 @@
+(apply + '(1 2))
+(apply (lambda args args) '(a b c))
+(apply (lambda () 'none) '())
+(apply car '((x y)))
+(apply apply (cons + (cons '(3 4) '())))

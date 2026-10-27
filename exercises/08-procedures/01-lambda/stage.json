@@ -1,0 +1,12 @@
+{
+  "title": "lambda without parameters",
+  "mode": "print",
+  "tests": {
+    "call": {
+      "description": "creating and calling procedures"
+    },
+    "each-call-evaluates": {
+      "description": "the body runs on each call, not when the procedure is made"
+    }
+  }
+}

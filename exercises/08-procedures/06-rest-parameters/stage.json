@@ -1,0 +1,15 @@
+{
+  "title": "Rest parameters",
+  "mode": "print",
+  "tests": {
+    "all-args": {
+      "description": "collecting every argument"
+    },
+    "dotted": {
+      "description": "required and rest parameters"
+    },
+    "define-shorthand": {
+      "description": "rest parameters in define"
+    }
+  }
+}

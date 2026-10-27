@@ -1,0 +1,15 @@
+{
+  "title": "Higher-order procedures",
+  "mode": "print",
+  "tests": {
+    "compose": {
+      "description": "composing procedures"
+    },
+    "map": {
+      "description": "mapping over a list"
+    },
+    "fold": {
+      "description": "folding a list"
+    }
+  }
+}

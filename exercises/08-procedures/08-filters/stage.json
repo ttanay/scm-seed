@@ -1,0 +1,15 @@
+{
+  "title": "Filters over standard input",
+  "mode": "run",
+  "tests": {
+    "cat": {
+      "description": "copying standard input to standard output"
+    },
+    "upcase": {
+      "description": "upper-casing every letter"
+    },
+    "line-count": {
+      "description": "counting lines"
+    }
+  }
+}

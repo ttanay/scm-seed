@@ -1,0 +1,6 @@
+(define (make-adder n) (lambda (x) (+ x n)))
+(define add3 (make-adder 3))
+(define add5 (make-adder 5))
+(add3 10)
+(add5 10)
+(add3 1)

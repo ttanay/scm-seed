@@ -1,0 +1,17 @@
+{
+  "title": "begin",
+  "mode": "print",
+  "tests": {
+    "value": {
+      "description": "the value of the last form"
+    },
+    "order": {
+      "description": "forms run in order",
+      "mode": "run"
+    },
+    "in-if": {
+      "description": "begin inside if",
+      "mode": "run"
+    }
+  }
+}

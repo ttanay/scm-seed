@@ -1,0 +1,5 @@
+(define (mk c) (define v c) (lambda () v))
+(define a (mk 'a))
+(define b (mk 'b))
+(a)
+(b)
