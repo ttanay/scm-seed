@@ -1,0 +1,18 @@
+{
+  "title": "Macros and definitions",
+  "mode": "print",
+  "tests": {
+    "several": {
+      "description": "a macro that defines two variables"
+    },
+    "across-files": {
+      "description": "a macro from an earlier file",
+      "load": [
+        "data/macros.scm"
+      ]
+    },
+    "redefinition": {
+      "description": "redefining a macro"
+    }
+  }
+}

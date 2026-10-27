@@ -1,0 +1,5 @@
+(define g (gensym))
+(symbol? g)
+(eq? g g)
+(eq? (gensym) (gensym))
+(eq? g (string->symbol (symbol->string g)))

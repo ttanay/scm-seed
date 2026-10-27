@@ -1,0 +1,25 @@
+{
+  "title": "Continuations are procedures",
+  "mode": "print",
+  "tests": {
+    "procedures": {
+      "description": "continuations are procedures"
+    },
+    "arity-zero": {
+      "description": "a continuation called with no arguments",
+      "expect": "error"
+    },
+    "arity-two": {
+      "description": "a continuation called with two arguments",
+      "expect": "error"
+    },
+    "non-procedure": {
+      "description": "(call/cc 5)",
+      "expect": "error"
+    },
+    "call-cc-arity": {
+      "description": "(call/cc)",
+      "expect": "error"
+    }
+  }
+}

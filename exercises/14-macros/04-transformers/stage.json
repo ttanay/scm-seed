@@ -1,0 +1,15 @@
+{
+  "title": "Transformers are procedures",
+  "mode": "print",
+  "tests": {
+    "helpers": {
+      "description": "a let macro built with helper procedures"
+    },
+    "compute": {
+      "description": "computing at expansion time"
+    },
+    "reader-forms": {
+      "description": "abbreviations are lists"
+    }
+  }
+}

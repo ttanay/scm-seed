@@ -965,6 +965,155 @@
           ]
         }
       ]
+    },
+    {
+      "section": 14,
+      "dir": "14-macros",
+      "title": "Macros",
+      "stages": [
+        {
+          "id": "14.1",
+          "dir": "01-define-macro",
+          "title": "define-macro",
+          "spec": [
+            "§6"
+          ]
+        },
+        {
+          "id": "14.2",
+          "dir": "02-expansion",
+          "title": "Expansion in place",
+          "spec": [
+            "§6"
+          ]
+        },
+        {
+          "id": "14.3",
+          "dir": "03-recursive-expansion",
+          "title": "Rest operands and recursive expansion",
+          "spec": [
+            "§6"
+          ]
+        },
+        {
+          "id": "14.4",
+          "dir": "04-transformers",
+          "title": "Transformers are procedures",
+          "spec": [
+            "§6"
+          ]
+        },
+        {
+          "id": "14.5",
+          "dir": "05-definitions",
+          "title": "Macros and definitions",
+          "spec": [
+            "§6",
+            "§5.8"
+          ]
+        },
+        {
+          "id": "14.6",
+          "dir": "06-gensym",
+          "title": "gensym and hygiene",
+          "spec": [
+            "§9.6",
+            "§6"
+          ]
+        },
+        {
+          "id": "14.7",
+          "dir": "07-tail-position",
+          "title": "Macros in tail position",
+          "spec": [
+            "§6",
+            "§7"
+          ]
+        },
+        {
+          "id": "14.8",
+          "dir": "08-macro-errors",
+          "title": "Macro errors",
+          "spec": [
+            "§6",
+            "§10"
+          ]
+        }
+      ]
+    },
+    {
+      "section": 15,
+      "dir": "15-continuations",
+      "title": "Continuations",
+      "stages": [
+        {
+          "id": "15.1",
+          "dir": "01-escapes",
+          "title": "Escaping with call/cc",
+          "spec": [
+            "§8"
+          ]
+        },
+        {
+          "id": "15.2",
+          "dir": "02-escaping-recursion",
+          "title": "Escaping from recursion",
+          "spec": [
+            "§8"
+          ]
+        },
+        {
+          "id": "15.3",
+          "dir": "03-continuation-procedures",
+          "title": "Continuations are procedures",
+          "spec": [
+            "§8",
+            "§9.8",
+            "§10"
+          ]
+        },
+        {
+          "id": "15.4",
+          "dir": "04-call-cc-tail-calls",
+          "title": "call/cc and tail calls",
+          "spec": [
+            "§7",
+            "§8"
+          ]
+        },
+        {
+          "id": "15.5",
+          "dir": "05-reentry",
+          "title": "Re-entering continuations",
+          "spec": [
+            "§8"
+          ]
+        },
+        {
+          "id": "15.6",
+          "dir": "06-generators",
+          "title": "Generators",
+          "spec": [
+            "§8"
+          ]
+        },
+        {
+          "id": "15.7",
+          "dir": "07-backtracking",
+          "title": "Backtracking",
+          "spec": [
+            "§8"
+          ]
+        },
+        {
+          "id": "15.8",
+          "dir": "08-top-level",
+          "title": "Top-level continuations",
+          "spec": [
+            "§8"
+          ]
+        }
+      ]
     }
   ]
 }

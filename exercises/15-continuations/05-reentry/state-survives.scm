@@ -1,0 +1,7 @@
+(define (run)
+  (define log '())
+  (define k #f)
+  (define i (call/cc (lambda (c) (set! k c) 0)))
+  (set! log (cons i log))
+  (if (< i 4) (k (+ i 1)) log))
+(run)

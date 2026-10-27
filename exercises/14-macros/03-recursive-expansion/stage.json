@@ -1,0 +1,15 @@
+{
+  "title": "Rest operands and recursive expansion",
+  "mode": "print",
+  "tests": {
+    "rest-operands": {
+      "description": "macros with rest parameters"
+    },
+    "self-recursive": {
+      "description": "a macro that expands into itself"
+    },
+    "macro-to-macro": {
+      "description": "a macro that expands into another"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+(define k #f)
+(define n 0)
+(write-char (integer->char (+ 48 (call/cc (lambda (c) (set! k c) 0)))))
+(set! n (+ n 1))
+(if (< n 3) (k n))
+(write-char #\newline)

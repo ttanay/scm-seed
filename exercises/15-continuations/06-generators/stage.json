@@ -1,0 +1,12 @@
+{
+  "title": "Generators",
+  "mode": "print",
+  "tests": {
+    "leaves": {
+      "description": "the leaves of a tree, one at a time"
+    },
+    "same-fringe": {
+      "description": "comparing two trees leaf by leaf"
+    }
+  }
+}

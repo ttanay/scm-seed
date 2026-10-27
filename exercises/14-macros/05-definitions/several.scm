@@ -1,0 +1,7 @@
+(define (list . xs) xs)
+(define-macro (define-two a b v) (list 'begin (list 'define a v) (list 'define b v)))
+(define-two p q 7)
+(list p q)
+(define-macro (defconst name val) (list 'define (list name) val))
+(defconst seven 7)
+(seven)

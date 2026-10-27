@@ -1,0 +1,22 @@
+{
+  "title": "Macro errors",
+  "mode": "print",
+  "tests": {
+    "transformer-arity": {
+      "description": "the wrong number of operands",
+      "expect": "error"
+    },
+    "transformer-error": {
+      "description": "a transformer that signals an error",
+      "expect": "error"
+    },
+    "malformed": {
+      "description": "(define-macro m 1)",
+      "expect": "error"
+    },
+    "gensym-arity": {
+      "description": "(gensym 1)",
+      "expect": "error"
+    }
+  }
+}

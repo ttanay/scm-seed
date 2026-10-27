@@ -1,0 +1,12 @@
+{
+  "title": "call/cc and tail calls",
+  "mode": "print",
+  "tests": {
+    "tail-call": {
+      "description": "a loop through call/cc"
+    },
+    "many-escapes": {
+      "description": "a million escapes"
+    }
+  }
+}

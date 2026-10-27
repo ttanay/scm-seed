@@ -1,0 +1,5 @@
+(define (list . xs) xs)
+(define-macro (my-if c a b) (list 'if c a b))
+(my-if #t 'yes (car '()))
+(my-if #f (car '()) 'no)
+(+ (my-if #t 1 2) 10)

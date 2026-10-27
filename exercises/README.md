@@ -133,13 +133,33 @@ Tick each stage (`[ ]` → `[x]`) as its tests pass. To see your real status, ru
 - [ ] 13.2 Where errors stop
 - [ ] 13.3 Errors in run mode
 
+**[Section 14: Macros](14-macros/README.md)** (`--print`)
+
+- [ ] 14.1 define-macro
+- [ ] 14.2 Expansion in place
+- [ ] 14.3 Rest operands and recursive expansion
+- [ ] 14.4 Transformers are procedures
+- [ ] 14.5 Macros and definitions
+- [ ] 14.6 gensym and hygiene
+- [ ] 14.7 Macros in tail position
+- [ ] 14.8 Macro errors
+
+**[Section 15: Continuations](15-continuations/README.md)** (`--print`)
+
+- [ ] 15.1 Escaping with call/cc
+- [ ] 15.2 Escaping from recursion
+- [ ] 15.3 Continuations are procedures
+- [ ] 15.4 call/cc and tail calls
+- [ ] 15.5 Re-entering continuations
+- [ ] 15.6 Generators
+- [ ] 15.7 Backtracking
+- [ ] 15.8 Top-level continuations
+
 **Coming next**
 
-- Section 14: Macros
-- Section 15: Continuations
 - Section 16: Capstone
 
-There are currently 84 stages with 318 tests.
+There are currently 100 stages with 361 tests.
 
 ## Harness modes
 
@@ -231,20 +251,20 @@ Which stages test each section of the spec, and the section of this course that 
 | §5.5 lambda | 8.1, 8.2, 8.3, 8.4, 8.5, 8.6, 8.8, 8.9, 9.2 | 9 |
 | §5.6 define | 7.1, 7.2, 7.6, 7.7, 8.3, 8.6, 9.2, 9.3, 9.4 | 9 |
 | §5.7 set! | 7.3, 7.4, 7.7 | 7 |
-| §5.8 begin | 9.1, 9.4, 9.5 | 9 |
-| §6 Macros | — | 14 (coming) |
-| §7 Proper tail recursion | 12.1, 12.2, 12.3, 12.4, 12.5 | 12 |
-| §8 Continuations | — | 15 (coming) |
+| §5.8 begin | 9.1, 9.4, 9.5, 14.5 | 9 |
+| §6 Macros | 14.1, 14.2, 14.3, 14.4, 14.5, 14.6, 14.7, 14.8 | 14 |
+| §7 Proper tail recursion | 12.1, 12.2, 12.3, 12.4, 12.5, 14.7, 15.4 | 12 |
+| §8 Continuations | 15.1, 15.2, 15.3, 15.4, 15.5, 15.6, 15.7, 15.8 | 15 |
 | §9.1 Pairs | 4.1, 4.4, 11.1, 11.2, 11.6 | 11 |
 | §9.2 Type predicates | 3.5, 4.2, 5.4, 11.4 | 11 |
 | §9.3 Identity | 4.3, 7.5, 10.3, 11.2, 11.4 | 4 |
 | §9.4 Integer primitives | 3.1, 3.2, 3.4, 3.7, 3.8 | 3 |
 | §9.5 Characters | 3.6, 3.7, 3.8 | 3 |
-| §9.6 Strings and symbols | 10.1, 10.2, 10.4, 10.5 | 14 (coming) |
+| §9.6 Strings and symbols | 10.1, 10.2, 10.4, 10.5, 14.6 | 14 |
 | §9.7 Vectors | 11.3, 11.5, 11.6 | 11 |
-| §9.8 Control | 8.7, 8.9, 12.4, 13.1 | 15 (coming) |
+| §9.8 Control | 8.7, 8.9, 12.4, 13.1, 15.3 | 15 |
 | §9.9 Input and output | 5.1, 5.3, 5.4, 5.5, 6.5, 7.6, 8.8, 9.5, 10.4, 12.5 | 5 |
-| §10 Errors | 1.16, 1.17, 2.3, 2.4, 3.7, 3.8, 4.4, 5.5, 6.6, 7.7, 8.9, 10.5, 11.6, 13.1, 13.2, 13.3 | 13 |
+| §10 Errors | 1.16, 1.17, 2.3, 2.4, 3.7, 3.8, 4.4, 5.5, 6.6, 7.7, 8.9, 10.5, 11.6, 13.1, 13.2, 13.3, 14.8, 15.3 | 13 |
 | §11 Conformance | — | 16 (coming) |
 
 Not tested, because no program can observe them:

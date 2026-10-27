@@ -1,0 +1,11 @@
+(define saved #f)
+(define log '())
+(define (f)
+  (define x (call/cc (lambda (k) (set! saved k) 1)))
+  (set! log (cons x log))
+  x)
+(define (main)
+  (define r (f))
+  (if (< r 3) (saved (+ r 1)) 'done))
+(main)
+log

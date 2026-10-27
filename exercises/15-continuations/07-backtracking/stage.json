@@ -1,0 +1,9 @@
+{
+  "title": "Backtracking",
+  "mode": "print",
+  "tests": {
+    "triples": {
+      "description": "every Pythagorean triple up to 20"
+    }
+  }
+}

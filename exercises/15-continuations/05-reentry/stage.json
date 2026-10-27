@@ -1,0 +1,18 @@
+{
+  "title": "Re-entering continuations",
+  "mode": "print",
+  "tests": {
+    "loop": {
+      "description": "re-entering a continuation to loop"
+    },
+    "internal-define": {
+      "description": "re-entering the continuation of an internal definition"
+    },
+    "after-return": {
+      "description": "re-entering a procedure that has returned"
+    },
+    "state-survives": {
+      "description": "assignments are not undone"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+(define (find-first pred xs)
+  (call/cc
+    (lambda (return)
+      (define (walk l)
+        (if (pair? l)
+            (begin (if (pred (car l)) (return (car l)))
+                   (walk (cdr l)))
+            #f))
+      (walk xs))))
+(find-first (lambda (n) (< 2 n)) '(1 2 3 4))
+(find-first (lambda (n) (< 9 n)) '(1 2 3 4))

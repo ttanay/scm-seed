@@ -1,0 +1,2 @@
+(quasiquote (a (unquote b) (unquote-splicing c)))
+(quote x)

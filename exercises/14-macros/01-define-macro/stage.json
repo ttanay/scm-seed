@@ -1,0 +1,15 @@
+{
+  "title": "define-macro",
+  "mode": "print",
+  "tests": {
+    "basic": {
+      "description": "a macro returns code"
+    },
+    "unevaluated": {
+      "description": "operands are not evaluated"
+    },
+    "code-is-evaluated": {
+      "description": "the expansion is evaluated"
+    }
+  }
+}

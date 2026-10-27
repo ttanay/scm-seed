@@ -1,0 +1,18 @@
+{
+  "title": "Escaping from recursion",
+  "mode": "print",
+  "tests": {
+    "search": {
+      "description": "stopping a search early"
+    },
+    "deep": {
+      "description": "escaping from non-tail recursion"
+    },
+    "passed-along": {
+      "description": "a continuation passed to another procedure"
+    },
+    "from-map": {
+      "description": "escaping from inside map"
+    }
+  }
+}

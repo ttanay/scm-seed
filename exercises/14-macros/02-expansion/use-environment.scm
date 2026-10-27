@@ -1,0 +1,6 @@
+(define (list . xs) xs)
+(define-macro (get-x) 'x)
+(define (f x) (get-x))
+(f 42)
+(define x 'global)
+(get-x)

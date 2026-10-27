@@ -1,0 +1,12 @@
+{
+  "title": "gensym and hygiene",
+  "mode": "print",
+  "tests": {
+    "fresh": {
+      "description": "gensym makes fresh symbols"
+    },
+    "swap": {
+      "description": "a swap macro that doesn't capture variables"
+    }
+  }
+}

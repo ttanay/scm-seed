@@ -1,0 +1,6 @@
+(define (list . xs) xs)
+(define-macro (my-list . xs) (cons 'list xs))
+(my-list 1 (+ 1 1) (car '(3)))
+(define-macro (unless c . body) (list 'if c #f (cons 'begin body)))
+(unless #f 'one 'two)
+(unless #t 'never)

@@ -1,0 +1,8 @@
+(define (test-reentry)
+  ((lambda (k n)
+     ((lambda (v)
+        (set! n (+ n 1))
+        (if (< v 3) (k (+ v 1)) n))
+      (call/cc (lambda (c) (set! k c) 0))))
+   #f 0))
+(test-reentry)

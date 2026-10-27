@@ -1,0 +1,9 @@
+{
+  "title": "Macros in tail position",
+  "mode": "print",
+  "tests": {
+    "loop": {
+      "description": "a loop through a macro"
+    }
+  }
+}

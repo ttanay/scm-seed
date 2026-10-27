@@ -1,0 +1,15 @@
+{
+  "title": "Expansion in place",
+  "mode": "print",
+  "tests": {
+    "use-environment": {
+      "description": "the expansion sees local variables"
+    },
+    "my-if": {
+      "description": "only the chosen branch runs"
+    },
+    "inside-procedures": {
+      "description": "macros inside procedure bodies"
+    }
+  }
+}

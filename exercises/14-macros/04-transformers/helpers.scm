@@ -1,0 +1,8 @@
+(define (list . xs) xs)
+(define (map1 f l) (if (pair? l) (cons (f (car l)) (map1 f (cdr l))) '()))
+(define (cadr x) (car (cdr x)))
+(define-macro (my-let bindings . body)
+  (cons (cons 'lambda (cons (map1 car bindings) body))
+        (map1 cadr bindings)))
+(my-let ((a 1) (b 2)) (+ a b))
+(my-let () 'empty)

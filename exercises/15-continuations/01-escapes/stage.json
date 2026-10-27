@@ -1,0 +1,12 @@
+{
+  "title": "Escaping with call/cc",
+  "mode": "print",
+  "tests": {
+    "escape": {
+      "description": "escaping out of an expression"
+    },
+    "skip-rest": {
+      "description": "the rest of the computation is abandoned"
+    }
+  }
+}
