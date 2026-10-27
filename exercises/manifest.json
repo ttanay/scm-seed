@@ -411,6 +411,100 @@
           ]
         }
       ]
+    },
+    {
+      "section": 4,
+      "dir": "04-pairs",
+      "title": "Pairs",
+      "stages": [
+        {
+          "id": "4.1",
+          "dir": "01-cons-car-cdr",
+          "title": "cons, car, and cdr",
+          "spec": [
+            "§9.1"
+          ]
+        },
+        {
+          "id": "4.2",
+          "dir": "02-pair-predicate",
+          "title": "pair? and the empty list",
+          "spec": [
+            "§9.2",
+            "§3.1"
+          ]
+        },
+        {
+          "id": "4.3",
+          "dir": "03-eq",
+          "title": "Identity with eq?",
+          "spec": [
+            "§9.3"
+          ]
+        },
+        {
+          "id": "4.4",
+          "dir": "04-pair-errors",
+          "title": "Runtime errors: pairs",
+          "spec": [
+            "§9.1",
+            "§10"
+          ]
+        }
+      ]
+    },
+    {
+      "section": 5,
+      "dir": "05-characters-and-io",
+      "title": "Characters and I/O",
+      "stages": [
+        {
+          "id": "5.1",
+          "dir": "01-write-char",
+          "title": "Writing characters",
+          "spec": [
+            "§9.9",
+            "§4.5"
+          ]
+        },
+        {
+          "id": "5.2",
+          "dir": "02-run-mode",
+          "title": "Run mode",
+          "spec": [
+            "§4.1",
+            "§4.5"
+          ]
+        },
+        {
+          "id": "5.3",
+          "dir": "03-read-char",
+          "title": "Reading characters",
+          "spec": [
+            "§9.9",
+            "§4.5"
+          ]
+        },
+        {
+          "id": "5.4",
+          "dir": "04-peek-and-eof",
+          "title": "peek-char and end of input",
+          "spec": [
+            "§9.9",
+            "§9.2",
+            "§3.1"
+          ]
+        },
+        {
+          "id": "5.5",
+          "dir": "05-io-errors",
+          "title": "Runtime errors: I/O",
+          "spec": [
+            "§9.9",
+            "§10"
+          ]
+        }
+      ]
     }
   ]
 }

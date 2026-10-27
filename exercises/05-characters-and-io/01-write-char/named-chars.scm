@@ -1,0 +1,6 @@
+(write-char #\a)
+(write-char #\space)
+(write-char #\b)
+(write-char #\tab)
+(write-char #\c)
+(write-char #\newline)

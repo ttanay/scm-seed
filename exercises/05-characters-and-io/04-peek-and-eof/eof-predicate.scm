@@ -1,0 +1,7 @@
+(eof-object? #f)
+(eof-object? #\a)
+(eof-object? '())
+(eof-object? (read-char))
+(eof-object? (read-char))
+(char? (read-char))
+(symbol? (peek-char))

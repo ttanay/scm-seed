@@ -1,0 +1,34 @@
+{
+  "title": "Runtime errors: pairs",
+  "mode": "print",
+  "tests": {
+    "car-empty": {
+      "description": "(car '())",
+      "expect": "error"
+    },
+    "cdr-number": {
+      "description": "(cdr 5)",
+      "expect": "error"
+    },
+    "car-symbol": {
+      "description": "(car 'a)",
+      "expect": "error"
+    },
+    "cons-one": {
+      "description": "(cons 1)",
+      "expect": "error"
+    },
+    "cons-three": {
+      "description": "(cons 1 2 3)",
+      "expect": "error"
+    },
+    "car-two": {
+      "description": "(car '(1) '(2))",
+      "expect": "error"
+    },
+    "eq-one": {
+      "description": "(eq? 1)",
+      "expect": "error"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "title": "pair? and the empty list",
+  "mode": "print",
+  "tests": {
+    "pair": {
+      "description": "pair?"
+    },
+    "empty-list": {
+      "description": "the empty list"
+    },
+    "disjoint": {
+      "description": "pairs are not other types"
+    }
+  }
+}

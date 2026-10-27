@@ -1,0 +1,18 @@
+{
+  "title": "Writing characters",
+  "mode": "run",
+  "tests": {
+    "hello": {
+      "description": "Hello, world"
+    },
+    "named-chars": {
+      "description": "space, tab, and newline"
+    },
+    "delimiter-chars": {
+      "description": "characters that are delimiters or prefixes"
+    },
+    "computed": {
+      "description": "writing computed characters"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Run mode",
+  "mode": "run",
+  "tests": {
+    "silent-values": {
+      "description": "values are not printed"
+    },
+    "several-files": {
+      "description": "files run in order",
+      "load": [
+        "data/one.scm",
+        "data/two.scm"
+      ]
+    },
+    "empty": {
+      "description": "a program that writes nothing"
+    }
+  }
+}

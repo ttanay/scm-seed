@@ -36,7 +36,7 @@ Run: `./run-tests.py --impl "YOUR-COMMAND" 2.1`
 | [`booleans`](01-self-evaluating/booleans.scm) | booleans | output |
 | [`characters`](01-self-evaluating/characters.scm) | characters | output |
 | [`strings`](01-self-evaluating/strings.scm) | strings | output |
-| [`several-files`](01-self-evaluating/several-files.scm) | forms from several files, in order | output |
+| [`several-files`](01-self-evaluating/several-files.scm) | forms from several files, in order | output (several files) |
 
 ---
 

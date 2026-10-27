@@ -1,0 +1,18 @@
+{
+  "title": "cons, car, and cdr",
+  "mode": "print",
+  "tests": {
+    "cons": {
+      "description": "building pairs and lists"
+    },
+    "car-cdr": {
+      "description": "taking lists apart"
+    },
+    "of-cons": {
+      "description": "car and cdr of a new pair"
+    },
+    "dotted": {
+      "description": "the tail of an improper list"
+    }
+  }
+}

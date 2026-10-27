@@ -1,0 +1,6 @@
+(pair? (cons 1 2))
+(pair? '(1))
+(pair? '())
+(pair? 'a)
+(pair? 1)
+(pair? "ab")

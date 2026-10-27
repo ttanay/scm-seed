@@ -47,7 +47,7 @@ Run: `./run-tests.py --impl "YOUR-COMMAND" 1.1`
 |---|---|---|
 | [`empty`](01-empty-file/empty.scm) | a zero-byte file | no output |
 | [`newline-only`](01-empty-file/newline-only.scm) | a file containing only a newline | no output |
-| [`two-files`](01-empty-file/two-files.scm) | two empty files in one run | no output |
+| [`two-files`](01-empty-file/two-files.scm) | two empty files in one run | no output (several files) |
 
 ---
 

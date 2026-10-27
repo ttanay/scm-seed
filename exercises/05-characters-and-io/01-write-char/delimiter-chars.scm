@@ -1,0 +1,7 @@
+(write-char #\()
+(write-char #\))
+(write-char #\;)
+(write-char #\")
+(write-char #\')
+(write-char #\\)
+(write-char #\newline)

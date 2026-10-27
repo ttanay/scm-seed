@@ -1,0 +1,35 @@
+{
+  "title": "Runtime errors: I/O",
+  "mode": "run",
+  "tests": {
+    "write-integer": {
+      "description": "(write-char 65)",
+      "expect": "error"
+    },
+    "write-string": {
+      "description": "(write-char \"a\")",
+      "expect": "error"
+    },
+    "write-none": {
+      "description": "(write-char)",
+      "expect": "error"
+    },
+    "write-two": {
+      "description": "(write-char #\\a #\\b)",
+      "expect": "error"
+    },
+    "read-arity": {
+      "description": "(read-char 1)",
+      "expect": "error"
+    },
+    "peek-arity": {
+      "description": "(peek-char 1)",
+      "expect": "error"
+    },
+    "eof-arity": {
+      "description": "(eof-object?)",
+      "mode": "print",
+      "expect": "error"
+    }
+  }
+}

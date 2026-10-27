@@ -191,6 +191,9 @@ def main():
 
     stages = all_stages()
     chosen = select(args.selectors, args.upto, stages)
+    manifest_path = EXERCISES / "manifest.json"
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8")) if manifest_path.exists() else None
+    titles = {s["dir"]: s["title"] for s in manifest["sections"]} if manifest else {}
 
     total_pass = total = 0
     status = {}
@@ -198,8 +201,8 @@ def main():
     for st in chosen:
         if st.section != current:
             current = st.section
-            print(bold(f"Section {current.name[:2]}: "
-                       + current.name[3:].replace("-", " ").capitalize()))
+            title = titles.get(current.name, current.name[3:].replace("-", " ").capitalize())
+            print(bold(f"Section {int(current.name[:2])}: {title}"))
         tests = st.config["tests"]
         results = [run_test(impl, st, name, opts, args.timeout) for name, opts in tests.items()]
         passed = sum(r.ok for r in results)
@@ -220,10 +223,8 @@ def main():
 
     print()
     print(f"{total_pass}/{total} tests passed; {sum(status.values())} stage(s) complete.")
-    manifest_path = EXERCISES / "manifest.json"
-    if manifest_path.exists() and len(status) == len(stages):
+    if manifest and len(status) == len(stages):
         print()
-        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
         report_spec(manifest, status, {int(p.name[:2]) for p in numbered_dirs(EXERCISES)})
     sys.exit(0 if total_pass == total else 1)
 

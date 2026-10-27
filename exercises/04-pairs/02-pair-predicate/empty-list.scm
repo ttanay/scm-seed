@@ -1,0 +1,5 @@
+(pair? (cdr '(1)))
+(symbol? '())
+(number? '())
+'()
+(cdr (cons 1 '()))

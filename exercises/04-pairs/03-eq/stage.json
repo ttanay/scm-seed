@@ -1,0 +1,21 @@
+{
+  "title": "Identity with eq?",
+  "mode": "print",
+  "tests": {
+    "symbols": {
+      "description": "symbols"
+    },
+    "booleans-and-empty": {
+      "description": "booleans and the empty list"
+    },
+    "pairs": {
+      "description": "separately built pairs are different"
+    },
+    "procedures": {
+      "description": "a procedure is itself"
+    },
+    "disjoint": {
+      "description": "objects of different types"
+    }
+  }
+}

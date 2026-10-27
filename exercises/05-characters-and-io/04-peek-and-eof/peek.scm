@@ -1,0 +1,7 @@
+(peek-char)
+(peek-char)
+(read-char)
+(peek-char)
+(read-char)
+(peek-char)
+(read-char)

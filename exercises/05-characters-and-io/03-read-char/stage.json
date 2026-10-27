@@ -1,0 +1,21 @@
+{
+  "title": "Reading characters",
+  "mode": "run",
+  "tests": {
+    "echo-fixed": {
+      "description": "copying input to output"
+    },
+    "whitespace": {
+      "description": "whitespace characters are read too"
+    },
+    "caesar": {
+      "description": "shifting letters"
+    },
+    "upcase": {
+      "description": "upper-casing letters"
+    },
+    "digit-sum": {
+      "description": "reading digits as numbers"
+    }
+  }
+}

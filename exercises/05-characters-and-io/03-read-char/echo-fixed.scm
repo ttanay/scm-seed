@@ -1,0 +1,6 @@
+(write-char (read-char))
+(write-char (read-char))
+(write-char (read-char))
+(write-char (read-char))
+(write-char (read-char))
+(write-char #\newline)

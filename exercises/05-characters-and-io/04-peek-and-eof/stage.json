@@ -1,0 +1,21 @@
+{
+  "title": "peek-char and end of input",
+  "mode": "print",
+  "tests": {
+    "read-values": {
+      "description": "read-char returns characters, then eof"
+    },
+    "eof-repeats": {
+      "description": "end of input is reported every time"
+    },
+    "peek": {
+      "description": "peek-char does not consume input"
+    },
+    "eof-predicate": {
+      "description": "eof-object? and the disjointness of the eof object"
+    },
+    "whitespace": {
+      "description": "whitespace input"
+    }
+  }
+}
