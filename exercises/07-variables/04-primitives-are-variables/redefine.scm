@@ -1,0 +1,5 @@
+(define old-car car)
+(define car cdr)
+(car '(1 2))
+(set! car old-car)
+(car '(1 2))

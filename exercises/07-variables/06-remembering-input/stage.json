@@ -1,0 +1,12 @@
+{
+  "title": "Remembering input",
+  "mode": "run",
+  "tests": {
+    "reverse-three": {
+      "description": "reading three characters and writing them backwards"
+    },
+    "compare": {
+      "description": "comparing two characters"
+    }
+  }
+}

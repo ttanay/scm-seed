@@ -1,0 +1,15 @@
+{
+  "title": "Reacting to input",
+  "mode": "run",
+  "tests": {
+    "answer": {
+      "description": "branching on input"
+    },
+    "eof": {
+      "description": "noticing the end of input"
+    },
+    "peek-first": {
+      "description": "looking ahead before reading"
+    }
+  }
+}

@@ -1,0 +1,5 @@
+(define p (cons 1 2))
+(define q p)
+(eq? p p)
+(eq? p q)
+(eq? p (cons 1 2))

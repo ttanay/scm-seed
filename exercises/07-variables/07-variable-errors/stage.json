@@ -1,0 +1,34 @@
+{
+  "title": "Runtime errors: variables",
+  "mode": "print",
+  "tests": {
+    "set-unbound": {
+      "description": "set! of an unbound variable",
+      "expect": "error"
+    },
+    "define-non-symbol": {
+      "description": "(define 1 2)",
+      "expect": "error"
+    },
+    "define-too-many": {
+      "description": "(define x 1 2)",
+      "expect": "error"
+    },
+    "define-empty": {
+      "description": "(define)",
+      "expect": "error"
+    },
+    "define-no-value": {
+      "description": "(define x)",
+      "expect": "error"
+    },
+    "set-non-symbol": {
+      "description": "(set! 1 2)",
+      "expect": "error"
+    },
+    "set-no-value": {
+      "description": "(set! x)",
+      "expect": "error"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "title": "if",
+  "mode": "print",
+  "tests": {
+    "basic": {
+      "description": "choosing a branch"
+    },
+    "as-value": {
+      "description": "if is an expression"
+    },
+    "computed-branches": {
+      "description": "branches can be any expression"
+    }
+  }
+}

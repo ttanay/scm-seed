@@ -1,0 +1,18 @@
+{
+  "title": "Redefinition and order",
+  "mode": "print",
+  "tests": {
+    "redefine": {
+      "description": "the latest definition wins"
+    },
+    "values-not-references": {
+      "description": "a variable holds a value, not another variable"
+    },
+    "across-files": {
+      "description": "definitions are shared between files",
+      "load": [
+        "data/defs.scm"
+      ]
+    }
+  }
+}

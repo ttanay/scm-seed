@@ -1,0 +1,12 @@
+{
+  "title": "Truthiness",
+  "mode": "print",
+  "tests": {
+    "only-false-is-false": {
+      "description": "values that count as true"
+    },
+    "predicate-results": {
+      "description": "predicates return real booleans"
+    }
+  }
+}

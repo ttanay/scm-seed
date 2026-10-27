@@ -1,0 +1,5 @@
+(define saved +)
+(set! + -)
+(+ 10 3)
+(set! + saved)
+(+ 10 3)

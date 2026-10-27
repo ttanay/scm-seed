@@ -1,0 +1,22 @@
+{
+  "title": "Malformed if",
+  "mode": "print",
+  "tests": {
+    "empty": {
+      "description": "(if)",
+      "expect": "error"
+    },
+    "test-only": {
+      "description": "(if #t)",
+      "expect": "error"
+    },
+    "too-many": {
+      "description": "(if #t 1 2 3)",
+      "expect": "error"
+    },
+    "test-fails": {
+      "description": "an error in the test",
+      "expect": "error"
+    }
+  }
+}

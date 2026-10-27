@@ -1,0 +1,7 @@
+(define first (read-char))
+(define second (read-char))
+(define third (read-char))
+(write-char third)
+(write-char second)
+(write-char first)
+(write-char #\newline)

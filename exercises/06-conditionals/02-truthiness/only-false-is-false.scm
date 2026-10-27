@@ -1,0 +1,7 @@
+(if 0 'y 'n)
+(if '() 'y 'n)
+(if "" 'y 'n)
+(if #\a 'y 'n)
+(if car 'y 'n)
+(if 'false 'y 'n)
+(if #f 'y 'n)

@@ -1,0 +1,12 @@
+{
+  "title": "Identity through variables",
+  "mode": "print",
+  "tests": {
+    "same-object": {
+      "description": "eq? through variables"
+    },
+    "symbols": {
+      "description": "a variable holding a symbol"
+    }
+  }
+}

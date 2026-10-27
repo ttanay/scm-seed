@@ -1,0 +1,13 @@
+{
+  "title": "Only one branch runs",
+  "mode": "print",
+  "tests": {
+    "errors-skipped": {
+      "description": "the branch not taken can hold errors"
+    },
+    "output-skipped": {
+      "description": "the branch not taken can hold output",
+      "mode": "run"
+    }
+  }
+}

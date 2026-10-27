@@ -1,0 +1,15 @@
+{
+  "title": "Primitives are variables",
+  "mode": "print",
+  "tests": {
+    "alias": {
+      "description": "copying a primitive"
+    },
+    "redefine": {
+      "description": "redefining and restoring a primitive"
+    },
+    "set-primitive": {
+      "description": "set! on a primitive"
+    }
+  }
+}

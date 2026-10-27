@@ -63,10 +63,27 @@ Tick each stage (`[ ]` → `[x]`) as its tests pass. To see your real status, ru
 - [ ] 5.4 peek-char and end of input
 - [ ] 5.5 Runtime errors: I/O
 
+**[Section 6: Conditionals](06-conditionals/README.md)** (`--print`)
+
+- [ ] 6.1 if
+- [ ] 6.2 Truthiness
+- [ ] 6.3 if without an alternative
+- [ ] 6.4 Only one branch runs
+- [ ] 6.5 Reacting to input
+- [ ] 6.6 Malformed if
+
+**[Section 7: Variables](07-variables/README.md)** (`--print`)
+
+- [ ] 7.1 define
+- [ ] 7.2 Redefinition and order
+- [ ] 7.3 set!
+- [ ] 7.4 Primitives are variables
+- [ ] 7.5 Identity through variables
+- [ ] 7.6 Remembering input
+- [ ] 7.7 Runtime errors: variables
+
 **Coming next**
 
-- Section 6: Conditionals
-- Section 7: Variables
 - Section 8: Procedures
 - Section 9: Sequencing
 - Section 10: Strings and symbols
@@ -77,7 +94,7 @@ Tick each stage (`[ ]` → `[x]`) as its tests pass. To see your real status, ru
 - Section 15: Continuations
 - Section 16: Capstone
 
-There are currently 38 stages with 168 tests.
+There are currently 51 stages with 207 tests.
 
 ## Harness modes
 
@@ -156,33 +173,33 @@ Which stages test each section of the spec, and the section of this course that 
 |---|---|---|
 | §2 Lexical syntax | 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 1.10, 1.11, 1.12, 1.13, 1.14, 1.15, 1.16, 1.17 | 1 |
 | §3.1 Disjoint types | 2.1, 4.2, 5.4 | 11 (coming) |
-| §3.2 Truthiness | — | 6 (coming) |
+| §3.2 Truthiness | 6.2, 6.3 | 6 |
 | §3.3 Integers | 3.2 | 3 |
 | §3.4 Characters and strings | — | 10 (coming) |
-| §4.1 Programs | 2.1, 5.2 | 7 (coming) |
-| §4.2 Environments and variables | 2.3 | 8 (coming) |
+| §4.1 Programs | 2.1, 5.2, 7.2 | 7 |
+| §4.2 Environments and variables | 2.3, 7.1, 7.4 | 8 (coming) |
 | §4.5 Process interface | 1.1, 5.1, 5.2, 5.3 | 13 (coming) |
-| §5.1 Variable reference | 2.3 | 7 (coming) |
+| §5.1 Variable reference | 2.3, 7.5, 7.7 | 7 |
 | §5.2 Procedure call | 3.1, 3.3, 3.8 | 3 |
 | §5.3 quote | 2.2, 2.4 | 2 |
-| §5.4 if | — | 6 (coming) |
+| §5.4 if | 6.1, 6.3, 6.4, 6.5, 6.6 | 6 |
 | §5.5 lambda | — | 9 (coming) |
-| §5.6 define | — | 9 (coming) |
-| §5.7 set! | — | 7 (coming) |
+| §5.6 define | 7.1, 7.2, 7.6, 7.7 | 9 (coming) |
+| §5.7 set! | 7.3, 7.4, 7.7 | 7 |
 | §5.8 begin | — | 9 (coming) |
 | §6 Macros | — | 14 (coming) |
 | §7 Proper tail recursion | — | 12 (coming) |
 | §8 Continuations | — | 15 (coming) |
 | §9.1 Pairs | 4.1, 4.4 | 11 (coming) |
 | §9.2 Type predicates | 3.5, 4.2, 5.4 | 11 (coming) |
-| §9.3 Identity | 4.3 | 4 |
+| §9.3 Identity | 4.3, 7.5 | 4 |
 | §9.4 Integer primitives | 3.1, 3.2, 3.4, 3.7, 3.8 | 3 |
 | §9.5 Characters | 3.6, 3.7, 3.8 | 3 |
 | §9.6 Strings and symbols | — | 14 (coming) |
 | §9.7 Vectors | — | 11 (coming) |
 | §9.8 Control | — | 15 (coming) |
-| §9.9 Input and output | 5.1, 5.3, 5.4, 5.5 | 5 |
-| §10 Errors | 1.16, 1.17, 2.3, 2.4, 3.7, 3.8, 4.4, 5.5 | 13 (coming) |
+| §9.9 Input and output | 5.1, 5.3, 5.4, 5.5, 6.5, 7.6 | 5 |
+| §10 Errors | 1.16, 1.17, 2.3, 2.4, 3.7, 3.8, 4.4, 5.5, 6.6, 7.7 | 13 (coming) |
 | §11 Conformance | — | 16 (coming) |
 
 Not tested, because no program can observe them:

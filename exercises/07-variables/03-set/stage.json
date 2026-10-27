@@ -1,0 +1,15 @@
+{
+  "title": "set!",
+  "mode": "print",
+  "tests": {
+    "set": {
+      "description": "changing a variable"
+    },
+    "prints-nothing": {
+      "description": "set! on its own prints nothing"
+    },
+    "copy-unaffected": {
+      "description": "set! changes one variable only"
+    }
+  }
+}

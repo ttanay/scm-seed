@@ -505,6 +505,135 @@
           ]
         }
       ]
+    },
+    {
+      "section": 6,
+      "dir": "06-conditionals",
+      "title": "Conditionals",
+      "stages": [
+        {
+          "id": "6.1",
+          "dir": "01-if",
+          "title": "if",
+          "spec": [
+            "§5.4"
+          ]
+        },
+        {
+          "id": "6.2",
+          "dir": "02-truthiness",
+          "title": "Truthiness",
+          "spec": [
+            "§3.2"
+          ]
+        },
+        {
+          "id": "6.3",
+          "dir": "03-one-armed-if",
+          "title": "if without an alternative",
+          "spec": [
+            "§5.4",
+            "§3.2"
+          ]
+        },
+        {
+          "id": "6.4",
+          "dir": "04-one-branch",
+          "title": "Only one branch runs",
+          "spec": [
+            "§5.4"
+          ]
+        },
+        {
+          "id": "6.5",
+          "dir": "05-reacting-to-input",
+          "title": "Reacting to input",
+          "spec": [
+            "§5.4",
+            "§9.9"
+          ]
+        },
+        {
+          "id": "6.6",
+          "dir": "06-if-errors",
+          "title": "Malformed if",
+          "spec": [
+            "§5.4",
+            "§10"
+          ]
+        }
+      ]
+    },
+    {
+      "section": 7,
+      "dir": "07-variables",
+      "title": "Variables",
+      "stages": [
+        {
+          "id": "7.1",
+          "dir": "01-define",
+          "title": "define",
+          "spec": [
+            "§5.6",
+            "§4.2"
+          ]
+        },
+        {
+          "id": "7.2",
+          "dir": "02-redefinition",
+          "title": "Redefinition and order",
+          "spec": [
+            "§5.6",
+            "§4.1"
+          ]
+        },
+        {
+          "id": "7.3",
+          "dir": "03-set",
+          "title": "set!",
+          "spec": [
+            "§5.7"
+          ]
+        },
+        {
+          "id": "7.4",
+          "dir": "04-primitives-are-variables",
+          "title": "Primitives are variables",
+          "spec": [
+            "§4.2",
+            "§5.7"
+          ]
+        },
+        {
+          "id": "7.5",
+          "dir": "05-identity",
+          "title": "Identity through variables",
+          "spec": [
+            "§9.3",
+            "§5.1"
+          ]
+        },
+        {
+          "id": "7.6",
+          "dir": "06-remembering-input",
+          "title": "Remembering input",
+          "spec": [
+            "§5.6",
+            "§9.9"
+          ]
+        },
+        {
+          "id": "7.7",
+          "dir": "07-variable-errors",
+          "title": "Runtime errors: variables",
+          "spec": [
+            "§5.1",
+            "§5.6",
+            "§5.7",
+            "§10"
+          ]
+        }
+      ]
     }
   ]
 }

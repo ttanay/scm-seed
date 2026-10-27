@@ -1,0 +1,12 @@
+{
+  "title": "if without an alternative",
+  "mode": "print",
+  "tests": {
+    "one-armed": {
+      "description": "one-armed if"
+    },
+    "nested-unspecified": {
+      "description": "the unspecified value inside a pair"
+    }
+  }
+}

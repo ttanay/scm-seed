@@ -1,0 +1,15 @@
+{
+  "title": "define",
+  "mode": "print",
+  "tests": {
+    "define": {
+      "description": "defining and using variables"
+    },
+    "prints-nothing": {
+      "description": "a define on its own prints nothing"
+    },
+    "procedure-value": {
+      "description": "a variable holding a primitive"
+    }
+  }
+}
