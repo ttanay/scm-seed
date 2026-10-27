@@ -1,0 +1,18 @@
+{
+  "title": "Tail positions",
+  "mode": "print",
+  "tests": {
+    "begin": {
+      "description": "the last form of a begin"
+    },
+    "nested-if": {
+      "description": "branches of nested ifs"
+    },
+    "after-define": {
+      "description": "a body with an internal definition"
+    },
+    "multi-form-body": {
+      "description": "the last of several body forms"
+    }
+  }
+}

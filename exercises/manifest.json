@@ -882,6 +882,89 @@
           ]
         }
       ]
+    },
+    {
+      "section": 12,
+      "dir": "12-tail-calls",
+      "title": "Tail calls",
+      "stages": [
+        {
+          "id": "12.1",
+          "dir": "01-self-tail-calls",
+          "title": "Self tail calls",
+          "spec": [
+            "§7"
+          ]
+        },
+        {
+          "id": "12.2",
+          "dir": "02-tail-positions",
+          "title": "Tail positions",
+          "spec": [
+            "§7"
+          ]
+        },
+        {
+          "id": "12.3",
+          "dir": "03-mutual-and-indirect",
+          "title": "Mutual and indirect tail calls",
+          "spec": [
+            "§7"
+          ]
+        },
+        {
+          "id": "12.4",
+          "dir": "04-apply-and-closures",
+          "title": "Tail calls through apply and closures",
+          "spec": [
+            "§7",
+            "§9.8"
+          ]
+        },
+        {
+          "id": "12.5",
+          "dir": "05-streaming",
+          "title": "Streaming input",
+          "spec": [
+            "§7",
+            "§9.9"
+          ]
+        }
+      ]
+    },
+    {
+      "section": 13,
+      "dir": "13-errors",
+      "title": "Errors",
+      "stages": [
+        {
+          "id": "13.1",
+          "dir": "01-error-procedure",
+          "title": "The error procedure",
+          "spec": [
+            "§9.8",
+            "§10"
+          ]
+        },
+        {
+          "id": "13.2",
+          "dir": "02-where-errors-stop",
+          "title": "Where errors stop",
+          "spec": [
+            "§10",
+            "§4.5"
+          ]
+        },
+        {
+          "id": "13.3",
+          "dir": "03-run-mode-errors",
+          "title": "Errors in run mode",
+          "spec": [
+            "§10",
+            "§4.5"
+          ]
+        }
+      ]
     }
   ]
 }

@@ -1,0 +1,5 @@
+(define count 0)
+(define (loop n)
+  (set! count (+ count 1))
+  (if (= n 0) count (loop (- n 1))))
+(loop 1000000)

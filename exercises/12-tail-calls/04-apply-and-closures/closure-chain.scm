@@ -1,0 +1,5 @@
+(define (cps-count n k)
+  (if (= n 0)
+      (k 0)
+      (cps-count (- n 1) (lambda (v) (k (+ v 1))))))
+(cps-count 300000 (lambda (v) v))

@@ -1,0 +1,19 @@
+{
+  "title": "Errors in run mode",
+  "mode": "run",
+  "tests": {
+    "flush": {
+      "description": "a lot of output, then an error",
+      "expect": "error"
+    },
+    "partial-line": {
+      "description": "an error in the middle of a line",
+      "expect": "error"
+    },
+    "read-error": {
+      "description": "a read error in run mode",
+      "expect": "error",
+      "stdout": "ignore"
+    }
+  }
+}

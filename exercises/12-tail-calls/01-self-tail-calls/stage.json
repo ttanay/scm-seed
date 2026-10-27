@@ -1,0 +1,12 @@
+{
+  "title": "Self tail calls",
+  "mode": "print",
+  "tests": {
+    "count-down": {
+      "description": "a loop of one million iterations"
+    },
+    "count-up": {
+      "description": "a loop with an accumulator"
+    }
+  }
+}

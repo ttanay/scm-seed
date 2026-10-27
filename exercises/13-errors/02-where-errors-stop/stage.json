@@ -1,0 +1,21 @@
+{
+  "title": "Where errors stop",
+  "mode": "print",
+  "tests": {
+    "deep": {
+      "description": "an error deep inside recursion",
+      "expect": "error"
+    },
+    "deferred": {
+      "description": "an error in a body happens when the procedure is called",
+      "expect": "error"
+    },
+    "later-files": {
+      "description": "an error stops later files",
+      "expect": "error",
+      "load": [
+        "data/raises.scm"
+      ]
+    }
+  }
+}

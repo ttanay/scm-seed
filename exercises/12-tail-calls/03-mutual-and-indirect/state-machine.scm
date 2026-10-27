@@ -1,0 +1,6 @@
+(define (state-a n) (if (= n 0) 'a (state-b (- n 1))))
+(define (state-b n) (if (= n 0) 'b (state-c (- n 1))))
+(define (state-c n) (if (= n 0) 'c (state-a (- n 1))))
+(state-a 1000000)
+(state-a 1000001)
+(state-a 1000002)

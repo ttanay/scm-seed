@@ -1,0 +1,26 @@
+{
+  "title": "The error procedure",
+  "mode": "print",
+  "tests": {
+    "basic": {
+      "description": "error stops the program",
+      "expect": "error"
+    },
+    "irritants": {
+      "description": "error with irritants",
+      "expect": "error"
+    },
+    "non-string": {
+      "description": "a non-string message",
+      "expect": "error"
+    },
+    "as-value": {
+      "description": "error passed as a value",
+      "expect": "error"
+    },
+    "applied": {
+      "description": "error called through apply",
+      "expect": "error"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Mutual and indirect tail calls",
+  "mode": "print",
+  "tests": {
+    "mutual": {
+      "description": "two mutually recursive procedures"
+    },
+    "state-machine": {
+      "description": "three states"
+    },
+    "through-parameters": {
+      "description": "calling procedures passed as arguments"
+    }
+  }
+}

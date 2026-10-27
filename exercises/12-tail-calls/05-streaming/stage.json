@@ -1,0 +1,13 @@
+{
+  "title": "Streaming input",
+  "mode": "print",
+  "tests": {
+    "count": {
+      "description": "counting the characters and lines of a large input"
+    },
+    "cat": {
+      "description": "copying a large input",
+      "mode": "run"
+    }
+  }
+}

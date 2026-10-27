@@ -1,0 +1,6 @@
+(define (count chars lines)
+  (define c (read-char))
+  (if (eof-object? c)
+      (cons chars lines)
+      (count (+ chars 1) (if (= (char->integer c) 10) (+ lines 1) lines))))
+(count 0 0)

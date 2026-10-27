@@ -1,0 +1,15 @@
+{
+  "title": "Tail calls through apply and closures",
+  "mode": "print",
+  "tests": {
+    "apply": {
+      "description": "a loop through apply"
+    },
+    "local-loop": {
+      "description": "a loop through a local procedure"
+    },
+    "closure-chain": {
+      "description": "a long chain of closures"
+    }
+  }
+}
