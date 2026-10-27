@@ -1,0 +1,12 @@
+{
+  "title": "A reader in Seed",
+  "mode": "run",
+  "tests": {
+    "reader": {
+      "description": "parsing standard input in Seed",
+      "load": [
+        "../lib/print.scm"
+      ]
+    }
+  }
+}

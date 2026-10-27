@@ -1,0 +1,12 @@
+{
+  "title": "Bootstrapping a library",
+  "mode": "run",
+  "tests": {
+    "bootstrap": {
+      "description": "Appendix B, then a program that uses it",
+      "load": [
+        "../lib/print.scm"
+      ]
+    }
+  }
+}

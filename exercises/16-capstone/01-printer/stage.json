@@ -1,0 +1,12 @@
+{
+  "title": "A printer in Seed",
+  "mode": "run",
+  "tests": {
+    "printer": {
+      "description": "printing every kind of value from Seed",
+      "load": [
+        "../lib/print.scm"
+      ]
+    }
+  }
+}

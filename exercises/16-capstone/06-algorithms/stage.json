@@ -1,0 +1,18 @@
+{
+  "title": "Algorithms",
+  "mode": "run",
+  "tests": {
+    "queens": {
+      "description": "N-queens",
+      "load": [
+        "../lib/print.scm"
+      ]
+    },
+    "bignum": {
+      "description": "bignum arithmetic",
+      "load": [
+        "../lib/print.scm"
+      ]
+    }
+  }
+}

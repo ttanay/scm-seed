@@ -1,0 +1,18 @@
+{
+  "title": "Objects and threads",
+  "mode": "run",
+  "tests": {
+    "objects": {
+      "description": "message-passing objects and a queue",
+      "load": [
+        "../lib/print.scm"
+      ]
+    },
+    "coroutines": {
+      "description": "a round-robin scheduler",
+      "load": [
+        "../lib/print.scm"
+      ]
+    }
+  }
+}

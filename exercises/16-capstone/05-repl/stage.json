@@ -1,0 +1,12 @@
+{
+  "title": "A REPL in Seed",
+  "mode": "run",
+  "tests": {
+    "repl": {
+      "description": "a read-eval-print loop over standard input",
+      "load": [
+        "../lib/print.scm"
+      ]
+    }
+  }
+}

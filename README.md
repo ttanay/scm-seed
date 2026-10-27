@@ -80,7 +80,7 @@ Write an interpreter in whatever language you like, working through the [exercis
 ./run-tests.py --impl "./your-seed" --progress  # checklist and spec coverage
 ```
 
-The runner needs only Python 3. You start by reading and printing data, then evaluate data, then call built-in procedures, and only then define your own. Completing a section unlocks parts of the spec. Sections 1–3 are available now; the [roadmap](exercises/README.md#checklist) lists the rest.
+The runner needs only Python 3. You start by reading and printing data, then evaluate data, then call built-in procedures, and only then define your own. Completing a section unlocks parts of the spec. There are 16 sections; when the last one passes, your interpreter implements the whole core. The [checklist](exercises/README.md#checklist) lists them all.
 
 The early stages use two harness modes, `--read` and `--print`, that let the tests observe your reader and evaluator before any procedure exists ([details](exercises/README.md#harness-modes)). Otherwise, the contract is the spec's **process interface** ([§4.5](spec.md#45-process-interface)):
 
@@ -131,7 +131,9 @@ exercises/
     01-empty-file/ – one directory per stage: stage.json plus NAME.scm / .out / .in
     ...
   02-evaluating-data/
-  03-calling-primitives/
+  ...
+  16-capstone/
+    lib/print.scm  – a printer written in Seed, used by the capstone programs
 ```
 
 ## Contributing

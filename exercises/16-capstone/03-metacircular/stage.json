@@ -1,0 +1,12 @@
+{
+  "title": "A metacircular evaluator",
+  "mode": "run",
+  "tests": {
+    "metacircular": {
+      "description": "an evaluator written in Seed",
+      "load": [
+        "../lib/print.scm"
+      ]
+    }
+  }
+}

@@ -1114,6 +1114,73 @@
           ]
         }
       ]
+    },
+    {
+      "section": 16,
+      "dir": "16-capstone",
+      "title": "Capstone",
+      "stages": [
+        {
+          "id": "16.1",
+          "dir": "01-printer",
+          "title": "A printer in Seed",
+          "spec": [
+            "§11"
+          ]
+        },
+        {
+          "id": "16.2",
+          "dir": "02-bootstrap",
+          "title": "Bootstrapping a library",
+          "spec": [
+            "§11",
+            "§6"
+          ]
+        },
+        {
+          "id": "16.3",
+          "dir": "03-metacircular",
+          "title": "A metacircular evaluator",
+          "spec": [
+            "§11"
+          ]
+        },
+        {
+          "id": "16.4",
+          "dir": "04-reader",
+          "title": "A reader in Seed",
+          "spec": [
+            "§11",
+            "§9.9"
+          ]
+        },
+        {
+          "id": "16.5",
+          "dir": "05-repl",
+          "title": "A REPL in Seed",
+          "spec": [
+            "§11",
+            "§9.9"
+          ]
+        },
+        {
+          "id": "16.6",
+          "dir": "06-algorithms",
+          "title": "Algorithms",
+          "spec": [
+            "§11"
+          ]
+        },
+        {
+          "id": "16.7",
+          "dir": "07-objects-and-threads",
+          "title": "Objects and threads",
+          "spec": [
+            "§11",
+            "§8"
+          ]
+        }
+      ]
     }
   ]
 }

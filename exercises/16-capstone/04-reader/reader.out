@@ -1,0 +1,11 @@
+42
+-17
+foo
+(a b (c d) ())
+(quote x)
+(1 . 2)
+(1 2 . 3)
+#t
+#f
+(define (square x) (* x x))
+-
