@@ -1,0 +1,5 @@
+(vector? (make-vector 0 0))
+(vector? '(1))
+(pair? (make-vector 1 1))
+(procedure? (make-vector 1 1))
+(vector? vector-ref)

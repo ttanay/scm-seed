@@ -1,0 +1,6 @@
+(define (len l) (if (pair? l) (+ 1 (len (cdr l))) 0))
+(define (string-length s) (len (string->list s)))
+(string-length "hello")
+(define (append2 a b) (if (pair? a) (cons (car a) (append2 (cdr a) b)) b))
+(define (string-append2 a b) (list->string (append2 (string->list a) (string->list b))))
+(string-append2 "foo" "bar")

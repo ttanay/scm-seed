@@ -1,0 +1,5 @@
+(define a (cons 1 '()))
+(define b (cons 2 a))
+(set-cdr! a b)
+(car (cdr (cdr (cdr a))))
+(eq? (cdr (cdr a)) a)

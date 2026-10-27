@@ -1,0 +1,8 @@
+(define (reverse! l)
+  (define (loop l acc)
+    (if (pair? l) (step l (cdr l) acc) acc))
+  (define (step l next acc)
+    (set-cdr! l acc)
+    (loop next l))
+  (loop l '()))
+(reverse! (cons 1 (cons 2 (cons 3 (cons 4 '())))))

@@ -1,0 +1,5 @@
+(define v (make-vector 2 #f))
+(vector-set! v 0 (lambda () 'called))
+(vector-set! v 1 v)
+((vector-ref v 0))
+((vector-ref (vector-ref v 1) 0))

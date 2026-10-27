@@ -1,0 +1,5 @@
+(define s "abc")
+(eq? s s)
+(eq? (list->string (string->list s)) s)
+(string? (symbol->string 'a))
+(symbol? (symbol->string 'a))

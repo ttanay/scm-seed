@@ -1,0 +1,38 @@
+{
+  "title": "Runtime errors: mutation and vectors",
+  "mode": "print",
+  "tests": {
+    "ref-past-end": {
+      "description": "index equal to the length",
+      "expect": "error"
+    },
+    "ref-negative": {
+      "description": "negative index",
+      "expect": "error"
+    },
+    "set-out-of-range": {
+      "description": "vector-set! out of range",
+      "expect": "error"
+    },
+    "negative-length": {
+      "description": "make-vector with a negative length",
+      "expect": "error"
+    },
+    "ref-list": {
+      "description": "vector-ref of a list",
+      "expect": "error"
+    },
+    "length-pair": {
+      "description": "vector-length of a pair",
+      "expect": "error"
+    },
+    "set-car-empty": {
+      "description": "set-car! of the empty list",
+      "expect": "error"
+    },
+    "set-cdr-arity": {
+      "description": "set-cdr! with one argument",
+      "expect": "error"
+    }
+  }
+}

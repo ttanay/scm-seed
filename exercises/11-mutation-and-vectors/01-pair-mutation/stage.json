@@ -1,0 +1,18 @@
+{
+  "title": "Mutating pairs",
+  "mode": "print",
+  "tests": {
+    "set-car-cdr": {
+      "description": "replacing the halves of a pair"
+    },
+    "shared": {
+      "description": "mutation through a shared tail"
+    },
+    "reverse-in-place": {
+      "description": "destructive reversal"
+    },
+    "queue": {
+      "description": "a queue with a tail pointer"
+    }
+  }
+}

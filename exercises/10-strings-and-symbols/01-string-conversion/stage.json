@@ -1,0 +1,15 @@
+{
+  "title": "Strings and lists",
+  "mode": "print",
+  "tests": {
+    "string-to-list": {
+      "description": "string->list"
+    },
+    "list-to-string": {
+      "description": "list->string"
+    },
+    "derived": {
+      "description": "string operations derived from lists"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Strings and symbols",
+  "mode": "print",
+  "tests": {
+    "symbol-to-string": {
+      "description": "symbol->string preserves case"
+    },
+    "string-to-symbol": {
+      "description": "string->symbol interns"
+    },
+    "round-trip": {
+      "description": "converting back and forth"
+    }
+  }
+}

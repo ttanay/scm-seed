@@ -1,0 +1,15 @@
+{
+  "title": "vector? and identity",
+  "mode": "print",
+  "tests": {
+    "predicate": {
+      "description": "vector? and disjointness"
+    },
+    "identity": {
+      "description": "vector identity and shared fill"
+    },
+    "any-element": {
+      "description": "vectors hold any objects"
+    }
+  }
+}

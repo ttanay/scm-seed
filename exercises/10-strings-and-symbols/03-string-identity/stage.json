@@ -1,0 +1,9 @@
+{
+  "title": "String identity",
+  "mode": "print",
+  "tests": {
+    "identity": {
+      "description": "eq? on strings"
+    }
+  }
+}

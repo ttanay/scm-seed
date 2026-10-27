@@ -1,0 +1,12 @@
+{
+  "title": "Computing with vectors",
+  "mode": "print",
+  "tests": {
+    "sum-of-squares": {
+      "description": "filling and summing a vector"
+    },
+    "sieve": {
+      "description": "the sieve of Eratosthenes"
+    }
+  }
+}

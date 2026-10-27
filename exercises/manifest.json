@@ -771,6 +771,117 @@
           ]
         }
       ]
+    },
+    {
+      "section": 10,
+      "dir": "10-strings-and-symbols",
+      "title": "Strings and symbols",
+      "stages": [
+        {
+          "id": "10.1",
+          "dir": "01-string-conversion",
+          "title": "Strings and lists",
+          "spec": [
+            "§9.6",
+            "§3.4"
+          ]
+        },
+        {
+          "id": "10.2",
+          "dir": "02-symbols",
+          "title": "Strings and symbols",
+          "spec": [
+            "§9.6"
+          ]
+        },
+        {
+          "id": "10.3",
+          "dir": "03-string-identity",
+          "title": "String identity",
+          "spec": [
+            "§9.3",
+            "§3.4"
+          ]
+        },
+        {
+          "id": "10.4",
+          "dir": "04-strings-in-programs",
+          "title": "Strings in programs",
+          "spec": [
+            "§9.6",
+            "§9.9"
+          ]
+        },
+        {
+          "id": "10.5",
+          "dir": "05-string-errors",
+          "title": "Runtime errors: strings",
+          "spec": [
+            "§9.6",
+            "§10"
+          ]
+        }
+      ]
+    },
+    {
+      "section": 11,
+      "dir": "11-mutation-and-vectors",
+      "title": "Mutation and vectors",
+      "stages": [
+        {
+          "id": "11.1",
+          "dir": "01-pair-mutation",
+          "title": "Mutating pairs",
+          "spec": [
+            "§9.1"
+          ]
+        },
+        {
+          "id": "11.2",
+          "dir": "02-circular",
+          "title": "Circular structure",
+          "spec": [
+            "§9.1",
+            "§9.3"
+          ]
+        },
+        {
+          "id": "11.3",
+          "dir": "03-vectors",
+          "title": "Vectors",
+          "spec": [
+            "§9.7"
+          ]
+        },
+        {
+          "id": "11.4",
+          "dir": "04-vector-identity",
+          "title": "vector? and identity",
+          "spec": [
+            "§9.2",
+            "§3.1",
+            "§9.3"
+          ]
+        },
+        {
+          "id": "11.5",
+          "dir": "05-computing-with-vectors",
+          "title": "Computing with vectors",
+          "spec": [
+            "§9.7"
+          ]
+        },
+        {
+          "id": "11.6",
+          "dir": "06-mutation-errors",
+          "title": "Runtime errors: mutation and vectors",
+          "spec": [
+            "§9.1",
+            "§9.7",
+            "§10"
+          ]
+        }
+      ]
     }
   ]
 }

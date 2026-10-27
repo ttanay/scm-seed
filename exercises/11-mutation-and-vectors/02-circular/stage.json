@@ -1,0 +1,12 @@
+{
+  "title": "Circular structure",
+  "mode": "print",
+  "tests": {
+    "ring": {
+      "description": "a one-element ring"
+    },
+    "cycle": {
+      "description": "a two-element cycle"
+    }
+  }
+}

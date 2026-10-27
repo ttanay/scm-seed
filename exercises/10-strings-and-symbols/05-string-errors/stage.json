@@ -1,0 +1,30 @@
+{
+  "title": "Runtime errors: strings",
+  "mode": "print",
+  "tests": {
+    "list-to-string-type": {
+      "description": "list->string of integers",
+      "expect": "error"
+    },
+    "list-to-string-improper": {
+      "description": "list->string of an improper list",
+      "expect": "error"
+    },
+    "string-to-list-type": {
+      "description": "string->list of a symbol",
+      "expect": "error"
+    },
+    "symbol-to-string-type": {
+      "description": "symbol->string of a string",
+      "expect": "error"
+    },
+    "string-to-symbol-type": {
+      "description": "string->symbol of a symbol",
+      "expect": "error"
+    },
+    "arity": {
+      "description": "string->list with two arguments",
+      "expect": "error"
+    }
+  }
+}

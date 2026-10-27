@@ -102,17 +102,32 @@ Tick each stage (`[ ]` → `[x]`) as its tests pass. To see your real status, ru
 - [ ] 9.4 begin and definitions
 - [ ] 9.5 Interactive programs
 
+**[Section 10: Strings and symbols](10-strings-and-symbols/README.md)** (`--print`)
+
+- [ ] 10.1 Strings and lists
+- [ ] 10.2 Strings and symbols
+- [ ] 10.3 String identity
+- [ ] 10.4 Strings in programs
+- [ ] 10.5 Runtime errors: strings
+
+**[Section 11: Mutation and vectors](11-mutation-and-vectors/README.md)** (`--print`)
+
+- [ ] 11.1 Mutating pairs
+- [ ] 11.2 Circular structure
+- [ ] 11.3 Vectors
+- [ ] 11.4 vector? and identity
+- [ ] 11.5 Computing with vectors
+- [ ] 11.6 Runtime errors: mutation and vectors
+
 **Coming next**
 
-- Section 10: Strings and symbols
-- Section 11: Mutation and vectors
 - Section 12: Tail calls
 - Section 13: Errors
 - Section 14: Macros
 - Section 15: Continuations
 - Section 16: Capstone
 
-There are currently 65 stages with 255 tests.
+There are currently 76 stages with 293 tests.
 
 ## Harness modes
 
@@ -190,10 +205,10 @@ Which stages test each section of the spec, and the section of this course that 
 | Spec section | Tested in stages | Completed in section |
 |---|---|---|
 | §2 Lexical syntax | 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 1.10, 1.11, 1.12, 1.13, 1.14, 1.15, 1.16, 1.17 | 1 |
-| §3.1 Disjoint types | 2.1, 4.2, 5.4 | 11 (coming) |
+| §3.1 Disjoint types | 2.1, 4.2, 5.4, 11.4 | 11 |
 | §3.2 Truthiness | 6.2, 6.3 | 6 |
 | §3.3 Integers | 3.2 | 3 |
-| §3.4 Characters and strings | — | 10 (coming) |
+| §3.4 Characters and strings | 10.1, 10.3 | 10 |
 | §4.1 Programs | 2.1, 5.2, 7.2 | 7 |
 | §4.2 Environments and variables | 2.3, 7.1, 7.4, 8.2, 8.4, 9.3 | 8 |
 | §4.5 Process interface | 1.1, 5.1, 5.2, 5.3 | 13 (coming) |
@@ -208,16 +223,16 @@ Which stages test each section of the spec, and the section of this course that 
 | §6 Macros | — | 14 (coming) |
 | §7 Proper tail recursion | — | 12 (coming) |
 | §8 Continuations | — | 15 (coming) |
-| §9.1 Pairs | 4.1, 4.4 | 11 (coming) |
-| §9.2 Type predicates | 3.5, 4.2, 5.4 | 11 (coming) |
-| §9.3 Identity | 4.3, 7.5 | 4 |
+| §9.1 Pairs | 4.1, 4.4, 11.1, 11.2, 11.6 | 11 |
+| §9.2 Type predicates | 3.5, 4.2, 5.4, 11.4 | 11 |
+| §9.3 Identity | 4.3, 7.5, 10.3, 11.2, 11.4 | 4 |
 | §9.4 Integer primitives | 3.1, 3.2, 3.4, 3.7, 3.8 | 3 |
 | §9.5 Characters | 3.6, 3.7, 3.8 | 3 |
-| §9.6 Strings and symbols | — | 14 (coming) |
-| §9.7 Vectors | — | 11 (coming) |
+| §9.6 Strings and symbols | 10.1, 10.2, 10.4, 10.5 | 14 (coming) |
+| §9.7 Vectors | 11.3, 11.5, 11.6 | 11 |
 | §9.8 Control | 8.7, 8.9 | 15 (coming) |
-| §9.9 Input and output | 5.1, 5.3, 5.4, 5.5, 6.5, 7.6, 8.8, 9.5 | 5 |
-| §10 Errors | 1.16, 1.17, 2.3, 2.4, 3.7, 3.8, 4.4, 5.5, 6.6, 7.7, 8.9 | 13 (coming) |
+| §9.9 Input and output | 5.1, 5.3, 5.4, 5.5, 6.5, 7.6, 8.8, 9.5, 10.4 | 5 |
+| §10 Errors | 1.16, 1.17, 2.3, 2.4, 3.7, 3.8, 4.4, 5.5, 6.6, 7.7, 8.9, 10.5, 11.6 | 13 (coming) |
 | §11 Conformance | — | 16 (coming) |
 
 Not tested, because no program can observe them:

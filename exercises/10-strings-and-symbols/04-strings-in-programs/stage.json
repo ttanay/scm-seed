@@ -1,0 +1,15 @@
+{
+  "title": "Strings in programs",
+  "mode": "run",
+  "tests": {
+    "hello": {
+      "description": "writing a string"
+    },
+    "greeting": {
+      "description": "a reply built from input"
+    },
+    "read-word": {
+      "description": "turning input into symbols"
+    }
+  }
+}

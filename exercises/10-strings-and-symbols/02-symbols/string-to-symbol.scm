@@ -1,0 +1,6 @@
+(string->symbol "foo")
+(eq? (string->symbol "foo") 'foo)
+(eq? (string->symbol "Foo") 'foo)
+(eq? (string->symbol "with space") (string->symbol "with space"))
+(symbol? (string->symbol "42"))
+(number? (string->symbol "42"))

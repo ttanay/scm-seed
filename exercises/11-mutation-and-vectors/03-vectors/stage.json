@@ -1,0 +1,15 @@
+{
+  "title": "Vectors",
+  "mode": "print",
+  "tests": {
+    "make": {
+      "description": "creating vectors"
+    },
+    "ref-set": {
+      "description": "reading and writing elements"
+    },
+    "nested": {
+      "description": "vectors inside other values"
+    }
+  }
+}
