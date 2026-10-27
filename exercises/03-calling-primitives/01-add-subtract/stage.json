@@ -1,0 +1,15 @@
+{
+  "title": "Addition and subtraction",
+  "mode": "print",
+  "tests": {
+    "add": {
+      "description": "addition"
+    },
+    "subtract": {
+      "description": "subtraction"
+    },
+    "spacing": {
+      "description": "a call spread over lines"
+    }
+  }
+}

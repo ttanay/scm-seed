@@ -1,0 +1,15 @@
+{
+  "title": "Characters and code points",
+  "mode": "print",
+  "tests": {
+    "char-to-integer": {
+      "description": "char->integer"
+    },
+    "integer-to-char": {
+      "description": "integer->char"
+    },
+    "round-trip": {
+      "description": "computing with characters"
+    }
+  }
+}

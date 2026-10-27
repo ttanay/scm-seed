@@ -1,0 +1,21 @@
+{
+  "title": "Abbreviations",
+  "mode": "read",
+  "tests": {
+    "quote": {
+      "description": "the quote prefix"
+    },
+    "quasiquote": {
+      "description": "quasiquote, unquote, and unquote-splicing"
+    },
+    "nested": {
+      "description": "abbreviations of abbreviations"
+    },
+    "spacing": {
+      "description": "whitespace after a prefix"
+    },
+    "inside-lists": {
+      "description": "abbreviations inside a list"
+    }
+  }
+}

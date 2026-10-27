@@ -1,0 +1,21 @@
+{
+  "title": "quote",
+  "mode": "print",
+  "tests": {
+    "symbols": {
+      "description": "quoted symbols"
+    },
+    "lists": {
+      "description": "quoted lists"
+    },
+    "nested": {
+      "description": "quoting a quote"
+    },
+    "not-evaluated": {
+      "description": "the datum is not evaluated"
+    },
+    "self-evaluating": {
+      "description": "quoting self-evaluating data"
+    }
+  }
+}

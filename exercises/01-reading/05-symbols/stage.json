@@ -1,0 +1,15 @@
+{
+  "title": "Symbols",
+  "mode": "read",
+  "tests": {
+    "simple": {
+      "description": "plain symbols"
+    },
+    "case": {
+      "description": "case is preserved"
+    },
+    "punctuation": {
+      "description": "letters, digits, and punctuation"
+    }
+  }
+}

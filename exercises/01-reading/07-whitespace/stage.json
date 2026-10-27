@@ -1,0 +1,21 @@
+{
+  "title": "Whitespace and comments",
+  "mode": "read",
+  "tests": {
+    "spaces": {
+      "description": "several data on one line"
+    },
+    "tabs-and-returns": {
+      "description": "tabs and carriage returns"
+    },
+    "comments": {
+      "description": "comments between data"
+    },
+    "comment-at-eof": {
+      "description": "a final comment with no newline"
+    },
+    "only-comments": {
+      "description": "a file of comments"
+    }
+  }
+}

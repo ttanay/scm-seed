@@ -1,0 +1,20 @@
+{
+  "title": "Variables",
+  "mode": "print",
+  "tests": {
+    "primitives": {
+      "description": "primitives are values"
+    },
+    "quoted": {
+      "description": "a quoted symbol is not a variable reference"
+    },
+    "unbound": {
+      "description": "an unbound variable",
+      "expect": "error"
+    },
+    "case-sensitive": {
+      "description": "variable names are case-sensitive",
+      "expect": "error"
+    }
+  }
+}

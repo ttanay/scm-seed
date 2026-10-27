@@ -1,0 +1,46 @@
+{
+  "title": "Runtime errors: calls",
+  "mode": "print",
+  "tests": {
+    "quotient-by-zero": {
+      "description": "(quotient 1 0)",
+      "expect": "error"
+    },
+    "remainder-by-zero": {
+      "description": "(remainder 1 0)",
+      "expect": "error"
+    },
+    "too-few": {
+      "description": "(+ 1)",
+      "expect": "error"
+    },
+    "too-many": {
+      "description": "(+ 1 2 3)",
+      "expect": "error"
+    },
+    "predicate-arity": {
+      "description": "(number? 1 2)",
+      "expect": "error"
+    },
+    "call-integer": {
+      "description": "(1 2 3)",
+      "expect": "error"
+    },
+    "call-string": {
+      "description": "(\"f\" 1)",
+      "expect": "error"
+    },
+    "call-symbol": {
+      "description": "('car '(1))",
+      "expect": "error"
+    },
+    "negative-code-point": {
+      "description": "(integer->char -1)",
+      "expect": "error"
+    },
+    "surrogate": {
+      "description": "(integer->char 55296)",
+      "expect": "error"
+    }
+  }
+}

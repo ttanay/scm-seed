@@ -1,0 +1,15 @@
+{
+  "title": "Characters",
+  "mode": "read",
+  "tests": {
+    "letters": {
+      "description": "letters and digits"
+    },
+    "punctuation": {
+      "description": "delimiters and prefixes"
+    },
+    "mixed": {
+      "description": "characters among other data"
+    }
+  }
+}

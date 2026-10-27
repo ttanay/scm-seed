@@ -1,0 +1,25 @@
+{
+  "title": "Self-evaluating data",
+  "mode": "print",
+  "tests": {
+    "integers": {
+      "description": "integers"
+    },
+    "booleans": {
+      "description": "booleans"
+    },
+    "characters": {
+      "description": "characters"
+    },
+    "strings": {
+      "description": "strings"
+    },
+    "several-files": {
+      "description": "forms from several files, in order",
+      "load": [
+        "data/one.scm",
+        "data/two.scm"
+      ]
+    }
+  }
+}

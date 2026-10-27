@@ -1,0 +1,416 @@
+{
+  "spec": {
+    "§2": "Lexical syntax",
+    "§3.1": "Disjoint types",
+    "§3.2": "Truthiness",
+    "§3.3": "Integers",
+    "§3.4": "Characters and strings",
+    "§4.1": "Programs",
+    "§4.2": "Environments and variables",
+    "§4.5": "Process interface",
+    "§5.1": "Variable reference",
+    "§5.2": "Procedure call",
+    "§5.3": "quote",
+    "§5.4": "if",
+    "§5.5": "lambda",
+    "§5.6": "define",
+    "§5.7": "set!",
+    "§5.8": "begin",
+    "§6": "Macros",
+    "§7": "Proper tail recursion",
+    "§8": "Continuations",
+    "§9.1": "Pairs",
+    "§9.2": "Type predicates",
+    "§9.3": "Identity",
+    "§9.4": "Integer primitives",
+    "§9.5": "Characters",
+    "§9.6": "Strings and symbols",
+    "§9.7": "Vectors",
+    "§9.8": "Control",
+    "§9.9": "Input and output",
+    "§10": "Errors",
+    "§11": "Conformance"
+  },
+  "completed_by": {
+    "§2": 1,
+    "§3.1": 11,
+    "§3.2": 6,
+    "§3.3": 3,
+    "§3.4": 10,
+    "§4.1": 7,
+    "§4.2": 8,
+    "§4.5": 13,
+    "§5.1": 7,
+    "§5.2": 3,
+    "§5.3": 2,
+    "§5.4": 6,
+    "§5.5": 9,
+    "§5.6": 9,
+    "§5.7": 7,
+    "§5.8": 9,
+    "§6": 14,
+    "§7": 12,
+    "§8": 15,
+    "§9.1": 11,
+    "§9.2": 11,
+    "§9.3": 4,
+    "§9.4": 3,
+    "§9.5": 3,
+    "§9.6": 14,
+    "§9.7": 11,
+    "§9.8": 15,
+    "§9.9": 5,
+    "§10": 13,
+    "§11": 16
+  },
+  "roadmap": [
+    {
+      "section": 1,
+      "title": "Reading",
+      "mode": "--read"
+    },
+    {
+      "section": 2,
+      "title": "Evaluating data",
+      "mode": "--print"
+    },
+    {
+      "section": 3,
+      "title": "Calling primitives",
+      "mode": "--print"
+    },
+    {
+      "section": 4,
+      "title": "Pairs",
+      "mode": "--print"
+    },
+    {
+      "section": 5,
+      "title": "Characters and I/O",
+      "mode": "run"
+    },
+    {
+      "section": 6,
+      "title": "Conditionals",
+      "mode": "--print"
+    },
+    {
+      "section": 7,
+      "title": "Variables",
+      "mode": "--print"
+    },
+    {
+      "section": 8,
+      "title": "Procedures",
+      "mode": "--print"
+    },
+    {
+      "section": 9,
+      "title": "Sequencing",
+      "mode": "--print"
+    },
+    {
+      "section": 10,
+      "title": "Strings and symbols",
+      "mode": "both"
+    },
+    {
+      "section": 11,
+      "title": "Mutation and vectors",
+      "mode": "--print"
+    },
+    {
+      "section": 12,
+      "title": "Tail calls",
+      "mode": "--print"
+    },
+    {
+      "section": 13,
+      "title": "Errors",
+      "mode": "run"
+    },
+    {
+      "section": 14,
+      "title": "Macros",
+      "mode": "--print"
+    },
+    {
+      "section": 15,
+      "title": "Continuations",
+      "mode": "--print"
+    },
+    {
+      "section": 16,
+      "title": "Capstone",
+      "mode": "run"
+    }
+  ],
+  "sections": [
+    {
+      "section": 1,
+      "dir": "01-reading",
+      "title": "Reading",
+      "stages": [
+        {
+          "id": "1.1",
+          "dir": "01-empty-file",
+          "title": "Empty file",
+          "spec": [
+            "§4.5"
+          ]
+        },
+        {
+          "id": "1.2",
+          "dir": "02-integers",
+          "title": "Integers",
+          "spec": [
+            "§2"
+          ]
+        },
+        {
+          "id": "1.3",
+          "dir": "03-signed-integers",
+          "title": "Signed integers",
+          "spec": [
+            "§2"
+          ]
+        },
+        {
+          "id": "1.4",
+          "dir": "04-booleans",
+          "title": "Booleans",
+          "spec": [
+            "§2"
+          ]
+        },
+        {
+          "id": "1.5",
+          "dir": "05-symbols",
+          "title": "Symbols",
+          "spec": [
+            "§2"
+          ]
+        },
+        {
+          "id": "1.6",
+          "dir": "06-peculiar-symbols",
+          "title": "Symbols that don't start with a letter",
+          "spec": [
+            "§2"
+          ]
+        },
+        {
+          "id": "1.7",
+          "dir": "07-whitespace",
+          "title": "Whitespace and comments",
+          "spec": [
+            "§2"
+          ]
+        },
+        {
+          "id": "1.8",
+          "dir": "08-characters",
+          "title": "Characters",
+          "spec": [
+            "§2"
+          ]
+        },
+        {
+          "id": "1.9",
+          "dir": "09-named-characters",
+          "title": "Named characters",
+          "spec": [
+            "§2"
+          ]
+        },
+        {
+          "id": "1.10",
+          "dir": "10-strings",
+          "title": "Strings",
+          "spec": [
+            "§2"
+          ]
+        },
+        {
+          "id": "1.11",
+          "dir": "11-string-escapes",
+          "title": "String escapes",
+          "spec": [
+            "§2"
+          ]
+        },
+        {
+          "id": "1.12",
+          "dir": "12-lists",
+          "title": "Lists",
+          "spec": [
+            "§2"
+          ]
+        },
+        {
+          "id": "1.13",
+          "dir": "13-nested-lists",
+          "title": "Nested lists",
+          "spec": [
+            "§2"
+          ]
+        },
+        {
+          "id": "1.14",
+          "dir": "14-dotted-pairs",
+          "title": "Dotted pairs",
+          "spec": [
+            "§2"
+          ]
+        },
+        {
+          "id": "1.15",
+          "dir": "15-abbreviations",
+          "title": "Abbreviations",
+          "spec": [
+            "§2"
+          ]
+        },
+        {
+          "id": "1.16",
+          "dir": "16-read-errors-1",
+          "title": "Read errors (1/2)",
+          "spec": [
+            "§2",
+            "§10"
+          ]
+        },
+        {
+          "id": "1.17",
+          "dir": "17-read-errors-2",
+          "title": "Read errors (2/2)",
+          "spec": [
+            "§2",
+            "§10"
+          ]
+        }
+      ]
+    },
+    {
+      "section": 2,
+      "dir": "02-evaluating-data",
+      "title": "Evaluating data",
+      "stages": [
+        {
+          "id": "2.1",
+          "dir": "01-self-evaluating",
+          "title": "Self-evaluating data",
+          "spec": [
+            "§3.1",
+            "§4.1"
+          ]
+        },
+        {
+          "id": "2.2",
+          "dir": "02-quote",
+          "title": "quote",
+          "spec": [
+            "§5.3"
+          ]
+        },
+        {
+          "id": "2.3",
+          "dir": "03-variables",
+          "title": "Variables",
+          "spec": [
+            "§4.2",
+            "§5.1",
+            "§10"
+          ]
+        },
+        {
+          "id": "2.4",
+          "dir": "04-quote-errors",
+          "title": "Malformed quote",
+          "spec": [
+            "§5.3",
+            "§10"
+          ]
+        }
+      ]
+    },
+    {
+      "section": 3,
+      "dir": "03-calling-primitives",
+      "title": "Calling primitives",
+      "stages": [
+        {
+          "id": "3.1",
+          "dir": "01-add-subtract",
+          "title": "Addition and subtraction",
+          "spec": [
+            "§5.2",
+            "§9.4"
+          ]
+        },
+        {
+          "id": "3.2",
+          "dir": "02-multiply-divide",
+          "title": "Multiplication and division",
+          "spec": [
+            "§9.4",
+            "§3.3"
+          ]
+        },
+        {
+          "id": "3.3",
+          "dir": "03-nested-calls",
+          "title": "Nested calls",
+          "spec": [
+            "§5.2"
+          ]
+        },
+        {
+          "id": "3.4",
+          "dir": "04-comparison",
+          "title": "Comparison",
+          "spec": [
+            "§9.4"
+          ]
+        },
+        {
+          "id": "3.5",
+          "dir": "05-type-predicates",
+          "title": "Type predicates",
+          "spec": [
+            "§9.2"
+          ]
+        },
+        {
+          "id": "3.6",
+          "dir": "06-characters",
+          "title": "Characters and code points",
+          "spec": [
+            "§9.5"
+          ]
+        },
+        {
+          "id": "3.7",
+          "dir": "07-type-errors",
+          "title": "Runtime errors: types",
+          "spec": [
+            "§9.4",
+            "§9.5",
+            "§10"
+          ]
+        },
+        {
+          "id": "3.8",
+          "dir": "08-call-errors",
+          "title": "Runtime errors: calls",
+          "spec": [
+            "§5.2",
+            "§9.4",
+            "§9.5",
+            "§10"
+          ]
+        }
+      ]
+    }
+  ]
+}

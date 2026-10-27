@@ -1,0 +1,46 @@
+{
+  "title": "Read errors (2/2)",
+  "mode": "read",
+  "tests": {
+    "dot-first": {
+      "description": "a dot with nothing before it",
+      "expect": "error",
+      "stdout": "ignore"
+    },
+    "dot-empty": {
+      "description": "a dot with nothing after it",
+      "expect": "error",
+      "stdout": "ignore"
+    },
+    "dot-two-tails": {
+      "description": "two data after a dot",
+      "expect": "error",
+      "stdout": "ignore"
+    },
+    "dot-alone": {
+      "description": "a dot outside a list",
+      "expect": "error",
+      "stdout": "ignore"
+    },
+    "bad-char-name": {
+      "description": "an unknown character name",
+      "expect": "error",
+      "stdout": "ignore"
+    },
+    "bad-escape": {
+      "description": "an unknown string escape",
+      "expect": "error",
+      "stdout": "ignore"
+    },
+    "bad-hash": {
+      "description": "unknown # syntax",
+      "expect": "error",
+      "stdout": "ignore"
+    },
+    "prefix-at-eof": {
+      "description": "a quote prefix at the end of the file",
+      "expect": "error",
+      "stdout": "ignore"
+    }
+  }
+}

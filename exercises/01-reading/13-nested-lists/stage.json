@@ -1,0 +1,15 @@
+{
+  "title": "Nested lists",
+  "mode": "read",
+  "tests": {
+    "nested": {
+      "description": "lists of lists"
+    },
+    "deep": {
+      "description": "deep nesting"
+    },
+    "empty-lists": {
+      "description": "lists of empty lists"
+    }
+  }
+}

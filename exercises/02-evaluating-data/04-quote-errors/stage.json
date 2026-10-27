@@ -1,0 +1,18 @@
+{
+  "title": "Malformed quote",
+  "mode": "print",
+  "tests": {
+    "no-datum": {
+      "description": "(quote)",
+      "expect": "error"
+    },
+    "two-data": {
+      "description": "(quote 1 2)",
+      "expect": "error"
+    },
+    "improper": {
+      "description": "(quote . 1)",
+      "expect": "error"
+    }
+  }
+}

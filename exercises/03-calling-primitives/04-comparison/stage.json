@@ -1,0 +1,15 @@
+{
+  "title": "Comparison",
+  "mode": "print",
+  "tests": {
+    "equal": {
+      "description": "="
+    },
+    "less": {
+      "description": "<"
+    },
+    "with-arithmetic": {
+      "description": "comparing computed values"
+    }
+  }
+}

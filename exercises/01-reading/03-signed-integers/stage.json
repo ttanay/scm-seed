@@ -1,0 +1,18 @@
+{
+  "title": "Signed integers",
+  "mode": "read",
+  "tests": {
+    "negative": {
+      "description": "negative integers"
+    },
+    "plus": {
+      "description": "a leading + is accepted and not printed"
+    },
+    "negative-zero": {
+      "description": "-0 is zero"
+    },
+    "range": {
+      "description": "the minimum required range"
+    }
+  }
+}

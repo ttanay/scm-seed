@@ -1,0 +1,18 @@
+{
+  "title": "Multiplication and division",
+  "mode": "print",
+  "tests": {
+    "multiply": {
+      "description": "multiplication"
+    },
+    "quotient": {
+      "description": "quotient truncates toward zero"
+    },
+    "remainder": {
+      "description": "remainder has the sign of the dividend"
+    },
+    "range": {
+      "description": "results in the minimum required range"
+    }
+  }
+}

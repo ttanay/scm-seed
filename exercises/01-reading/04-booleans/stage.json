@@ -1,0 +1,12 @@
+{
+  "title": "Booleans",
+  "mode": "read",
+  "tests": {
+    "true-false": {
+      "description": "#t and #f"
+    },
+    "mixed": {
+      "description": "booleans among integers"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Empty file",
+  "mode": "read",
+  "tests": {
+    "empty": {
+      "description": "a zero-byte file"
+    },
+    "newline-only": {
+      "description": "a file containing only a newline"
+    },
+    "two-files": {
+      "description": "two empty files in one run",
+      "load": [
+        "data/also-empty.scm"
+      ]
+    }
+  }
+}

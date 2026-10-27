@@ -1,0 +1,15 @@
+{
+  "title": "Nested calls",
+  "mode": "print",
+  "tests": {
+    "two-levels": {
+      "description": "a call with calls as operands"
+    },
+    "deep": {
+      "description": "deeply nested calls"
+    },
+    "mixed": {
+      "description": "different primitives together"
+    }
+  }
+}

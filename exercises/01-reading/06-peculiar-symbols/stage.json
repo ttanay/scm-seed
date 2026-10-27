@@ -1,0 +1,15 @@
+{
+  "title": "Symbols that don't start with a letter",
+  "mode": "read",
+  "tests": {
+    "operators": {
+      "description": "arithmetic and comparison names"
+    },
+    "others": {
+      "description": "other symbols"
+    },
+    "integer-or-symbol": {
+      "description": "signs and digits"
+    }
+  }
+}

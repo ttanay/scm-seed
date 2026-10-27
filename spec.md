@@ -95,10 +95,12 @@ A *delimiter* is whitespace, `(`, `)`, `"`, `;`, or end of input. Integers, bool
 
 - **Integers.** An optional sign followed by one or more decimal digits (`42`, `-7`, `+3`). A token that does not match the `integer` rule is a symbol, so `+`, `-`, `1+`, and `-x` are all symbols.
 - **Booleans.** `#t` and `#f`. Implementations MAY also accept `#true` and `#false`.
-- **Characters.** `#\` followed by one character, such as `#\a`, `#\(`, or `#\ ` (a space). If more non-delimiter characters follow the first one, the whole token is a *character name*. Implementations MUST recognize `space` (U+0020), `newline` (U+000A), and `tab` (U+0009). Any other character name is an error. Implementations MAY support more names and `#\xHH` hex escapes.
-- **Strings.** Text between double quotes. Implementations MUST support the escapes `\\`, `\"`, `\n` (U+000A), and `\t` (U+0009). Other escapes are an error. A string literal MAY span lines; the newlines are part of the string.
+- **Characters.** `#\` followed by one character, such as `#\a`, `#\(`, or `#\ ` (a space). If more non-delimiter characters follow the first one, the whole token is a *character name*. Implementations MUST recognize `space` (U+0020), `newline` (U+000A), and `tab` (U+0009). Implementations MAY support more names and `#\xHH` hex escapes. A character name the implementation does not support signals an error.
+- **Strings.** Text between double quotes. Implementations MUST support the escapes `\\`, `\"`, `\n` (U+000A), and `\t` (U+0009). An escape the implementation does not support signals an error, and so does a string that is not closed before end of input. A string literal MAY span lines; the newlines are part of the string.
 - **Symbols.** Any other token made of non-delimiter characters, except that a symbol MUST NOT start with `#` or with one of `'` `` ` `` `,`. Symbols are **case-sensitive**: `Foo` and `foo` are different symbols [R7RS §2.1].
-- **Dot.** A token that is exactly `.` is only valid in the dotted position of a list. Anywhere else it is an error.
+- **Dot.** A token that is exactly `.` is only valid in the dotted position of a list, with exactly one datum after it. Anywhere else it signals an error.
+- **Other `#` syntax.** A token starting with `#` that is not a boolean, a character, or an extension the implementation supports (§2.5) signals an error.
+- **Parentheses.** An unmatched `(` or `)` signals an error.
 
 ### 2.4 Abbreviations
 
@@ -644,7 +646,7 @@ Not derivable, so left to extensions: floating-point arithmetic (it can be emula
 
 ## Appendix A: Reference Evaluator (informative)
 
-This pseudocode gives the meaning of the core, in the spirit of the LISP 1.5 `eval`/`apply` [McCarthy et al. 1962] and the SICP metacircular evaluator [Abelson & Sussman 1996, §4.1]. To meet §7 and §8, a real implementation needs a trampoline, CPS, an explicit control stack, or similar machinery [Baker 1995; Dybvig 1987; Queinnec 1996].
+This pseudocode gives the meaning of the core, in the spirit of the LISP 1.5 `eval`/`apply` [McCarthy et al. 1962] and the SICP metacircular evaluator [Abelson & Sussman 1996, §4.1]. In most host languages, transcribing this pseudocode directly as recursive functions will not meet the requirements of §7 and §8. How you meet them is a design decision left to you.
 
 ```text
 eval(x, env):

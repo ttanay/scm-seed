@@ -1,0 +1,21 @@
+{
+  "title": "Lists",
+  "mode": "read",
+  "tests": {
+    "empty": {
+      "description": "the empty list"
+    },
+    "flat": {
+      "description": "flat lists"
+    },
+    "mixed": {
+      "description": "lists of mixed types"
+    },
+    "spacing": {
+      "description": "irregular spacing inside a list"
+    },
+    "adjacent": {
+      "description": "lists with no space between them"
+    }
+  }
+}

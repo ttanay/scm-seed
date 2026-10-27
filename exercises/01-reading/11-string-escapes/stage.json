@@ -1,0 +1,18 @@
+{
+  "title": "String escapes",
+  "mode": "read",
+  "tests": {
+    "quote-and-backslash": {
+      "description": "escaped quotes and backslashes"
+    },
+    "newline-and-tab": {
+      "description": "escaped newlines and tabs"
+    },
+    "literal-newline": {
+      "description": "a string spanning two lines"
+    },
+    "literal-tab": {
+      "description": "a literal tab inside a string"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Named characters",
+  "mode": "read",
+  "tests": {
+    "names": {
+      "description": "the three required names"
+    },
+    "literal-space": {
+      "description": "#\\ followed by a space"
+    },
+    "case": {
+      "description": "single characters are still case-sensitive"
+    }
+  }
+}

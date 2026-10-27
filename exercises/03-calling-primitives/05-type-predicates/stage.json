@@ -1,0 +1,24 @@
+{
+  "title": "Type predicates",
+  "mode": "print",
+  "tests": {
+    "number": {
+      "description": "number?"
+    },
+    "char": {
+      "description": "char?"
+    },
+    "string": {
+      "description": "string?"
+    },
+    "symbol": {
+      "description": "symbol?"
+    },
+    "procedure": {
+      "description": "procedure?"
+    },
+    "results": {
+      "description": "predicates return booleans"
+    }
+  }
+}

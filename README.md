@@ -70,9 +70,19 @@ Floating point, files, and clocks are left to optional implementation extensions
 
 ## How to use this repo
 
-### 1. Implement the core
+### 1. Build the interpreter, stage by stage
 
-Write an interpreter in whatever language you like. The only contract is the **process interface** ([spec §4.5](spec.md#45-process-interface)):
+Write an interpreter in whatever language you like, working through the [exercises](exercises/README.md). The course is split into sections, and each section into small stages. Every stage says what to support, never how, and comes with tests:
+
+```sh
+./run-tests.py --impl "./your-seed" 1.1         # the first stage
+./run-tests.py --impl "./your-seed" --upto 2.3  # everything up to stage 2.3
+./run-tests.py --impl "./your-seed" --progress  # checklist and spec coverage
+```
+
+The runner needs only Python 3. You start by reading and printing data, then evaluate data, then call built-in procedures, and only then define your own. Completing a section unlocks parts of the spec. Sections 1–3 are available now; the [roadmap](exercises/README.md#checklist) lists the rest.
+
+The early stages use two harness modes, `--read` and `--print`, that let the tests observe your reader and evaluator before any procedure exists ([details](exercises/README.md#harness-modes)). Otherwise, the contract is the spec's **process interface** ([§4.5](spec.md#45-process-interface)):
 
 ```sh
 your-seed FILE...        # evaluate files in order, in one global environment
@@ -86,7 +96,7 @@ your-seed FILE...        # evaluate files in order, in one global environment
 | exit `0` | Success. |
 | exit non-zero | A signaled error. |
 
-This makes every implementation interchangeable. The same test programs and the same library run on all of them.
+That contract makes every implementation interchangeable: the same tests and the same library run on all of them.
 
 ### 2. Grow the library
 
@@ -96,20 +106,7 @@ Write your standard library as Seed files and load them ahead of your program:
 your-seed lib/00-base.scm lib/10-syntax.scm lib/20-lists.scm lib/30-io.scm my-program.scm
 ```
 
-[Appendix B of the spec](spec.md#appendix-b-bootstrapping-examples-informative) shows the first steps: `list`, `let`, `and`/`or`/`cond`, `quasiquote`, variadic `+`, and a number printer.
-
-### Suggested milestones
-
-**Interpreter**
-
-1. **Reader.** Datums, quote abbreviations, comments ([§2](spec.md#2-lexical-syntax)). Write a debug printer in your host language too; you'll need it.
-2. **Eval/apply.** Self-evaluating atoms, variables, `quote`, `if`, `lambda`, `define`, `set!`, `begin`, and the primitives.
-3. **Proper tail calls.** `(loop 1000000)` must not blow the stack ([§7](spec.md#7-proper-tail-recursion)). Typical approaches are a trampoline, an explicit stack, or CPS.
-4. **Macros.** `define-macro` and `gensym` ([§6](spec.md#6-macros)).
-5. **Continuations.** First escape-only, then fully re-entrant `call/cc` ([§8](spec.md#8-continuations)). If you did CPS or an explicit stack in step 3, this part is easy.
-6. **Errors and exit codes.** [§10](spec.md#10-errors).
-
-**Library**
+[Appendix B of the spec](spec.md#appendix-b-bootstrapping-examples-informative) shows the first steps. A suggested order:
 
 1. List basics: `list`, `null?`, `not`, `cadr`, `map`, `append`.
 2. Syntax: `let`, `and`, `or`, `cond`, `let*`, `letrec`, named `let`, `when`, `unless`, `quasiquote`.
@@ -123,16 +120,24 @@ your-seed lib/00-base.scm lib/10-syntax.scm lib/20-lists.scm lib/30-io.scm my-pr
 ## Repository layout
 
 ```
-README.md   – this file
-spec.md     – the language specification (normative)
+README.md          – this file
+spec.md            – the language specification (normative)
+run-tests.py       – the test runner (Python 3, no dependencies)
+exercises/
+  README.md        – checklist, harness modes, output format, test format, spec coverage
+  manifest.json    – which stages test which spec sections (used by the runner)
+  01-reading/
+    README.md      – the section's stages: what to support, and the tests
+    01-empty-file/ – one directory per stage: stage.json plus NAME.scm / .out / .in
+    ...
+  02-evaluating-data/
+  03-calling-primitives/
 ```
-
-A shared conformance test suite and a reference library are planned. The examples in [spec Appendix C](spec.md#appendix-c-conformance-examples) are a good starting point for your own tests, and contributions are welcome (see below).
 
 ## Contributing
 
 - **Spec issues.** If something is ambiguous, contradictory, or under-specified, please open an issue that quotes the section number.
-- **Tests.** Small programs paired with their expected stdout and exit status are the most useful kind of contribution.
+- **Tests.** Small programs paired with their expected stdout and exit status are the most useful kind of contribution. See the [test format](exercises/README.md#test-format).
 - **Implementations.** Link yours in an issue or PR and we'll add it to a list here.
 
 Proposals to *add* something to the core need to show that it can't reasonably be derived in Seed. That rule is the whole point of the project.

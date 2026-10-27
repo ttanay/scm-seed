@@ -1,0 +1,31 @@
+{
+  "title": "Read errors (1/2)",
+  "mode": "read",
+  "tests": {
+    "unclosed": {
+      "description": "a list that is never closed",
+      "expect": "error",
+      "stdout": "ignore"
+    },
+    "unclosed-nested": {
+      "description": "a nested list that is never closed",
+      "expect": "error",
+      "stdout": "ignore"
+    },
+    "stray-close": {
+      "description": "a close parenthesis with no open",
+      "expect": "error",
+      "stdout": "ignore"
+    },
+    "extra-close": {
+      "description": "one close parenthesis too many",
+      "expect": "error",
+      "stdout": "ignore"
+    },
+    "unterminated-string": {
+      "description": "a string that is never closed",
+      "expect": "error",
+      "stdout": "ignore"
+    }
+  }
+}

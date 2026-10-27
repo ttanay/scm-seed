@@ -1,0 +1,18 @@
+{
+  "title": "Integers",
+  "mode": "read",
+  "tests": {
+    "single": {
+      "description": "one integer"
+    },
+    "several": {
+      "description": "one integer per line"
+    },
+    "leading-zeros": {
+      "description": "leading zeros are not part of the value"
+    },
+    "large": {
+      "description": "integers up to 2^29 - 1"
+    }
+  }
+}

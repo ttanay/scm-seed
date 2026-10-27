@@ -1,0 +1,34 @@
+{
+  "title": "Runtime errors: types",
+  "mode": "print",
+  "tests": {
+    "add-boolean": {
+      "description": "(+ 1 #t)",
+      "expect": "error"
+    },
+    "add-symbol": {
+      "description": "(+ 'a 1)",
+      "expect": "error"
+    },
+    "subtract-string": {
+      "description": "(- \"5\" 1)",
+      "expect": "error"
+    },
+    "compare-chars": {
+      "description": "(< #\\a #\\b)",
+      "expect": "error"
+    },
+    "char-to-integer": {
+      "description": "(char->integer 65)",
+      "expect": "error"
+    },
+    "integer-to-char": {
+      "description": "(integer->char #\\a)",
+      "expect": "error"
+    },
+    "partial-output": {
+      "description": "an error after some output",
+      "expect": "error"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Dotted pairs",
+  "mode": "read",
+  "tests": {
+    "pair": {
+      "description": "a dotted pair"
+    },
+    "improper": {
+      "description": "an improper list"
+    },
+    "normalize": {
+      "description": "dotted notation that forms a proper list"
+    },
+    "nested": {
+      "description": "pairs inside pairs"
+    },
+    "spacing": {
+      "description": "whitespace around the dot"
+    }
+  }
+}

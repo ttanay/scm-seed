@@ -1,0 +1,5 @@
+(symbol? 'a)
+(symbol? "a")
+(symbol? '+)
+(symbol? '())
+(symbol? 5)
